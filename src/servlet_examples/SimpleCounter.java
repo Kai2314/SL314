@@ -1,20 +1,32 @@
 package servlet_examples;
 
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class SimpleCounter extends HttpServlet {
 
   int count = 0;
 
-  public void doGet(HttpServletRequest req, HttpServletResponse res)
+public void doGet(HttpServletRequest req, HttpServletResponse res)
                                throws ServletException, IOException { 
-	//不是CGI所以count可以保存，類似服務生還在等待
     res.setContentType("text/plain");
     PrintWriter out = res.getWriter();
-    count++;
+    
+    count++;	      		
+    
+    try {
+		Thread.sleep(200);
+	} catch (InterruptedException e) {
+		e.printStackTrace();
+	}
+    
     out.println("Since loading, this servlet has been accessed " +
-                count + " times.e"); // Reloading Context with name [/SL314] is completed 修改會reloading重新載入 之前的服務生會換新的
+            count + " times");  
+  
   }
 }
