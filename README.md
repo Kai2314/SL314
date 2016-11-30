@@ -3,11 +3,13 @@
 
 用到網頁:
 
-1. [Servlet 3.0 API - Apache Tomcat 7.0.73](https://tomcat.apache.org/tomcat-7.0-doc/servletapi/)
-2. [主網頁](https://shps951023.github.io/SL314/)
-3. [javax.servlet API v.3.0 3.0-SNAPSHOT API ](C:/Users/Administrator/git/SL314/jsp-api-2.2-javadoc/index.html)
+1. [主網頁](https://shps951023.github.io/SL314/)
+2. [Servlet 3.0 API - Apache Tomcat 7.0.73](https://tomcat.apache.org/tomcat-7.0-doc/servletapi/)
+3. [jsp-api-2.2-javadoc ](https://shps951023.github.io/SL314/jsp-api-2.2-javadoc/index.html)
+4.  [servlet-3.0-final-javadoc](https://shps951023.github.io/SL314/servlet-3_0-final-javadoc/index.html)
 
 ---
+
 - 容器、Servlet與JSP:
 
   Servlet/JSP 所認得的唯一網站就是Web容器;Servlet/JSP各司其職。
@@ -16,7 +18,8 @@
   - [第一個Servlet]()
   - [第一個JSP]()
   - [關於MVC/Model2]()
----
+
+
 - 關於請求:
 
   取得使用者的請求加以處理是 Web 程式服務的開端。
