@@ -12,7 +12,7 @@
 
 - 容器、Servlet與JSP:
 
-  Servlet/JSP 所認得的唯一網站就是Web容器;Servlet/JSP各司其職。
+  Servlet/JSP 所認得的唯一網站就是Web容器;Servlet/JSP各司其職。 
 
   - [何為容器]()
   - [第一個Servlet]()
