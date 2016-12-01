@@ -35,7 +35,7 @@
 - 課程大綱 part1
   - 1.Web Application概觀與開發環境準備
   - 2.撰寫 與 佈署 HTTP Servlet
-  - 3.Servlet的生命週期(Servlet介面)
+  - 3.[Servlet的生命週期(Servlet介面)](docs/CH03.md)
   - 4.撰寫資訊(HttpServletRequest,ServletConfig,ServeletContext介面)
   - 5.傳送HTML資訊(HttpServletRequest介面)
   - 6.Session Tracking(HttpSession介面)
