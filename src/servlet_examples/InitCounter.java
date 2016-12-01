@@ -18,7 +18,7 @@ public class InitCounter extends HttpServlet {
     out.println(count + " times.");
   }
   public void init() throws ServletException {
-    String initial = getInitParameter("initial");
+    String initial = getInitParameter("initial");//從web.xml那邊取出
     try {
       count = Integer.parseInt(initial);
     }
