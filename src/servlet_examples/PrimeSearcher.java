@@ -12,7 +12,7 @@ public class PrimeSearcher extends HttpServlet implements Runnable {
   Thread searcher;                       // background search thread
 
   public void destroy() {
-    searcher=null;//å‡å¦‚æ²’æœ‰å›æ”¶ï¼Œæœƒå‰µé€ ä¸€å †åŸ·è¡Œç·’
+    searcher=null;//°²¦p¨S¦³¦^¦¬¡A·|³Ğ³y¤@°ï°õ¦æºü
   }
   public void doGet(HttpServletRequest req, HttpServletResponse res)
                                throws ServletException, IOException {

@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 
 public class HolisticCounter extends HttpServlet {
 
-  static int classCount = 0;  // shared by all instances
+  static int classCount = 0;  // shared by all instances //­«ÂI
   int count = 0;              // separate for each servlet
   static Hashtable<HolisticCounter,HolisticCounter> instances = new Hashtable<HolisticCounter,HolisticCounter>();  // also shared
 
