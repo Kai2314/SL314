@@ -12,7 +12,7 @@ public class PrimeSearcher extends HttpServlet implements Runnable {
   Thread searcher;                       // background search thread
 
   public void destroy() {
-    searcher=null;
+    searcher=null;//假如沒有回收，會創造一堆執行緒
   }
   public void doGet(HttpServletRequest req, HttpServletResponse res)
                                throws ServletException, IOException {
