@@ -3,11 +3,11 @@
 
 用到網頁:
 
-- [主網頁](https://shps951023.github.io/SL314/)
+- [SL314主網頁](https://shps951023.github.io/SL314/)
 - [Servlet 3.0 API - Apache Tomcat 7.0.73](https://tomcat.apache.org/tomcat-7.0-doc/servletapi/)
-- [jsp-api-2.2-javadoc ](https://shps951023.github.io/SL314/jsp-api-2.2-javadoc/index.html)
-- [servlet-3.0-final-javadoc](https://shps951023.github.io/SL314/servlet-3_0-final-javadoc/index.html)
-- [錯誤表](images/EF3Fyff.png)
+- [jsp-api-2.2-javadoc ](https://shps951023.github.io/SL314/apidoc/jsp-api-2.2-javadoc/index.html)
+- [servlet-3.0-final-javadoc](https://shps951023.github.io/SL314/apidoc/servlet-3_0-final-javadoc/index.html)
+- [網頁錯誤表](images/EF3Fyff.png)
 
 ---
 
