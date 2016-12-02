@@ -15,7 +15,6 @@
   - [1.Web Application概觀與開發環境準備](docs/CH01.md)
   - [2.撰寫 與 佈署 HTTP Servlet](docs/CH02,md)
   - [3.Servlet的生命週期(Servlet介面)](docs/CH03.md)
-  - fsdpofjpdsjfpjsdpf
   - 4.撰寫資訊(HttpServletRequest,ServletConfig,ServeletContext介面)
   - 5.傳送HTML資訊(HttpServletRequest介面)
   - 6.Session Tracking(HttpSession介面)1
