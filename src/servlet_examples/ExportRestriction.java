@@ -18,9 +18,11 @@ public class ExportRestriction extends HttpServlet {
     // See if the client is allowed
     if (! isHostAllowed(remoteHost)) {
       out.println("<br><font color='red'>  Access denied ..... </font>");
+      out.println("<br><font color='blue'> HI~~~~~~</font>");
     }
     else {
       out.println("<br><font color='blue'> Access granted .....</font>");
+      out.println("<br><font color='blue'> HI~~~~~~</font>");
       // Display download links, etc...
     }
   }

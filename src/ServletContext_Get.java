@@ -1,7 +1,9 @@
 
 import java.io.*;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
+
 /*
  * 要先運行Get，才能放Set
  * 
@@ -13,6 +15,7 @@ import javax.servlet.http.*;
  * 	session 不可以 
  * 
  */
+
 public class ServletContext_Get extends HttpServlet {
 
 

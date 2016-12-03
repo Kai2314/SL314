@@ -7,6 +7,10 @@ import javax.servlet.http.*;
 
 import com.oreilly.servlet.Base64Decoder;
 
+/*
+ * 
+*/
+
 public class CustomAuth extends HttpServlet {
 
   Map<String,String> users = new Hashtable<String,String>();
@@ -21,9 +25,11 @@ public class CustomAuth extends HttpServlet {
 
     // Get encoded user and password, comes after "BASIC "
     String userpassEncoded = auth.substring(6);
+    System.out.println(userpassEncoded);
 
     // Decode it, using any base 64 decoder (we use com.oreilly.servlet)
     String userpassDecoded = Base64Decoder.decode(userpassEncoded);
+    System.out.println(userpassDecoded);
 
     // Check our user list to see if that user and password are "allowed"
     if ("allowed".equals(users.get(userpassDecoded)))
@@ -42,8 +48,8 @@ public class CustomAuth extends HttpServlet {
     // Do we allow that user?
     if (!allowUser(auth)) {
       // Not allowed, so report he's unauthorized
-      res.setHeader("WWW-Authenticate", "BASIC realm=\"users\"");
-      res.sendError(HttpServletResponse.SC_UNAUTHORIZED);
+			res.setHeader("WWW-Authenticate", "BASIC realm=\"users\"");
+			res.sendError(HttpServletResponse.SC_UNAUTHORIZED);
       // Could offer to add him to the allowed user list
     }
     else {

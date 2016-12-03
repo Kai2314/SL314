@@ -15,5 +15,7 @@ public class Session_Set extends HttpServlet {
 		HttpSession session = req.getSession();
         session.setAttribute("myName2","§d¥Ã§Ó2");
 	
+        String ID = session.getId();
+        session.setAttribute("myName2",ID);
 	}
 }
