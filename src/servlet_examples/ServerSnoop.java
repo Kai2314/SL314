@@ -13,21 +13,23 @@ public class ServerSnoop extends GenericServlet {
 		res.setContentType("text/plain");
 		PrintWriter out = res.getWriter();
 
-		ServletContext context = getServletContext();
+		ServletContext context = getServletContext();//取得伺服器的版本/名稱 //拿到客廳物件
 		out.println("req.getServerName(): " + req.getServerName());
 		out.println("req.getServerPort(): " + req.getServerPort());
 		out.println("context.getServerInfo(): " + context.getServerInfo());
 		out.println("getServerInfo() name: "    + getServerInfoName(context.getServerInfo()));
 		out.println("getServerInfo() version: "	+ getServerInfoVersion(context.getServerInfo()));
 		out.println("context.getAttributeNames():");
-		Enumeration en = context.getAttributeNames();
-		while (en.hasMoreElements()) {
-			String name = (String) en.nextElement();
-			out.println("  context.getAttribute(\"" + name + "\"): " + context.getAttribute(name));
-		}
+		// Enumeration en = context.getAttributeNames();
+		// while (en.hasMoreElements()) {
+		// String name = (String) en.nextElement();
+		// out.println(" context.getAttribute(\"" + name + "\"): " +
+		// context.getAttribute(name));
+		// }
 	}
 
 	private String getServerInfoName(String serverInfo) {
+		//int slash = serverInfo.indexOf('/');做切割的動作
 		int slash = serverInfo.indexOf('/');
 		if (slash == -1)
 			return serverInfo;
