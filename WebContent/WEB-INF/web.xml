@@ -23,7 +23,12 @@
 		<res-auth>Container</res-auth>
 	</resource-ref>
 
-
+	<!-- 自己測試 -->
+	
+	
+	
+	
+	<!-- 原本 -->
 	<servlet>
 		<servlet-name>ScheduleTimer</servlet-name>
 		<servlet-class>han.ScheduleTimer</servlet-class>
