@@ -1,14 +1,22 @@
 /*
    測試:   http://localhost:8081/SL314/ViewFile/images/tomcat.gif
+   http://localhost:8081/SL314/ViewFile/images/1.txt
    應注意     (※1)注意當有用到【額外路徑資訊】時必須使用【前置路徑對應】的設定
    同時注意(※2)web.xml內的<url-pattern>是<url-pattern>/ViewFile/*</url-pattern>                        
 */
 
 package servlet_examples;
 
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import com.oreilly.servlet.ServletUtils;
 
@@ -18,6 +26,7 @@ public class ViewFile extends HttpServlet {
 
 		// Use a ServletOutputStream because we may pass binary information
 		ServletOutputStream out = res.getOutputStream();// 二進位的出
+		PrintWriter pr = new PrintWriter(out, true);//?
 
 		// Get the file to view
 		/* ※第1個主要方法 */String file = req.getPathTranslated();
@@ -50,7 +59,7 @@ public class ViewFile extends HttpServlet {
 		res.setContentType("application/force-download");
 		res.setHeader("Content-Disposition", "attachment; filename=\""+(new File(file)).getName() + "\"");
 		//#測試:加工功能:
-
+		pr.println("aaaaaaaaaaaaaaaaaa");
 		
 		// Return the file
 		try {
@@ -63,5 +72,7 @@ public class ViewFile extends HttpServlet {
 		} catch (IOException e) {
 			out.println("Problem sending file: " + e.getMessage());
 		}
+		pr.println("<br>bbbbbbbbb");
+		pr.println("ccccccccc");
 	}
 }
