@@ -17,7 +17,7 @@ public class HeaderSnoop extends HttpServlet {
     Enumeration names = req.getHeaderNames();
     while (names.hasMoreElements()) {
       String name = (String) names.nextElement();
-      Enumeration values = req.getHeaders(name);  // support multiple values
+      Enumeration values = req.getHeaders(name);  // support multiple values 
       if (values != null) {
         while (values.hasMoreElements()) {
           String value = (String) values.nextElement();

@@ -11,7 +11,7 @@ import com.oreilly.servlet.Base64Decoder;
  * 
 */
 
-public class CustomAuth extends HttpServlet {
+public class CustomAuth extends HttpServlet {//°²¶Ç¸t¦®½d¨Ò
 
   Map<String,String> users = new Hashtable<String,String>();
 
