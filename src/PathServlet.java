@@ -17,6 +17,7 @@ public class PathServlet extends HttpServlet {
 
 out.println("==================================context物件 - 路徑資訊及檔案服務=================================="); 
     
+
     out.println("req.getScheme()= "+req.getScheme());
     out.println("req.getServerName()= "+req.getServerName());
     out.println("req.getServerPort()= "+req.getServerPort());
