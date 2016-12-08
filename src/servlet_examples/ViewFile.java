@@ -34,16 +34,24 @@ public class ViewFile extends HttpServlet {
 						 * file代表檔案 從"String file = req.getPathTranslated();"
 						 */
 		/* ※第3個主要方法 */
-		res.setContentType(
-				contentType);/*
-								 * "text/html;charset=Utf-8" 改為contentType ， 不寫死
-								 */
-		System.out.println(
-				"contentType=" + contentType);/*
-												 * print: contentType=image/gif
-												 * contentType=application/pdf
-												 */
+//		res.setContentType(
+//				contentType);/*
+//								 * "text/html;charset=Utf-8" 改為contentType ， 不寫死
+//								 */
+//		System.out.println(
+//				"contentType=" + contentType);/*
+//												 * print: contentType=image/gif
+//												 * contentType=application/pdf
+//												 */
+		
+		//---
 
+		//#測試:下載功能:
+		res.setContentType("application/force-download");
+		res.setHeader("Content-Disposition", "attachment; filename=\""+(new File(file)).getName() + "\"");
+		//#測試:加工功能:
+
+		
 		// Return the file
 		try {
 			ServletUtils.returnFile(file,
