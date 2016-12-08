@@ -14,34 +14,37 @@ import com.oreilly.servlet.ServletUtils;
 
 public class ViewFile extends HttpServlet {
 
-  public void doGet(HttpServletRequest req, HttpServletResponse res)
-                               throws ServletException, IOException {
-    
-    // Use a ServletOutputStream because we may pass binary information
-    ServletOutputStream out = res.getOutputStream();
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
-    // Get the file to view
-    String file = req.getPathTranslated();
+		// Use a ServletOutputStream because we may pass binary information
+		ServletOutputStream out = res.getOutputStream();// 二進位的出
 
-    // No file, nothing to view
-    if (file == null) {
-      out.println("No file to view");
-      return;
-    }
+		// Get the file to view
+		/* ※第1個主要方法 */String file = req.getPathTranslated();
 
-    // Get and set the type of the file
-    String contentType = getServletContext().getMimeType(file);
-    res.setContentType(contentType);
+		// No file, nothing to view
+		if (file == null) {
+			out.println("No file to view");
+			return;
+		}
 
-    // Return the file
-    try {
-      ServletUtils.returnFile(file, out);
-    }
-    catch (FileNotFoundException e) {
-      out.println("File not found");
-    }
-    catch (IOException e) {
-      out.println("Problem sending file: " + e.getMessage());
-    }
-  }
+		// Get and set the type of the file
+		/* ※第2個主要方法 */
+		String contentType = getServletContext().getMimeType(file);
+		// file代表檔案 從"String file = req.getPathTranslated();"
+		/* ※第3個主要方法 */
+		res.setContentType(contentType);// "text/html;charset=Utf-8" 改為contentType ， 不寫死
+		System.out.println("contentType="+contentType);/*print:contentType=image/gif
+			contentType=application/pdf
+			*/
+		
+		// Return the file
+		try {
+			ServletUtils.returnFile(file, out);
+		} catch (FileNotFoundException e) {
+			out.println("File not found");
+		} catch (IOException e) {
+			out.println("Problem sending file: " + e.getMessage());
+		}
+	}
 }

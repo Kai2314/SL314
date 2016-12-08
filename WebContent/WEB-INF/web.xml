@@ -242,7 +242,7 @@
 		<url-pattern>/ParameterSnoop</url-pattern>
 	</servlet-mapping>
 	
-	<!--注意當有用到【額外路徑資訊】時必須使用【前置路徑對應】的設定  -->
+	<!--注意當有用到【額外路徑資訊】時必須使用【前置路徑對應】的設定   -->
 	<servlet>
 		<servlet-name>ViewFile</servlet-name>
 		<servlet-class>servlet_examples.ViewFile</servlet-class>
