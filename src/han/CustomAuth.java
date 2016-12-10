@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class CustomAuth extends HttpServlet {
+public class CustomAuth extends HttpServlet {//°²¶Ç¸t¦®½d¨Ò
 	Map<String, String> users = new Hashtable<String, String>();
 	String allowPsw = "allowed";
 

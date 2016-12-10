@@ -5,6 +5,9 @@ import java.util.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
+/*
+ *­n¸ò
+ */
 public class HeaderSnoop extends HttpServlet {
 
   public void doGet(HttpServletRequest req, HttpServletResponse res)

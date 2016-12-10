@@ -55,7 +55,7 @@ out.println("==================================context物件 - 路徑資訊及檔案服務=
     out.println("context.getMimeType(\"/xxx.avi\")= "+context.getMimeType("/xxx.avi"));
 
 out.println("========================================================");
-out.println("context.getMimeType(\"/xxx.aa106\")= "+context.getMimeType("/xxx.aa106"));
+out.println("context.getMimeType(\"/xxx.aa106\")= "+context.getMimeType("/xxx.aa106"));//獲取副檔名的MimeType
      
     }
 	 

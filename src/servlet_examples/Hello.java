@@ -23,16 +23,18 @@ public class Hello extends HttpServlet {
 		String name3 = null;
 		// 錯誤方式:
 
-		System.out.println(name3 == null);
-		System.out.println(name2 == null);
-		System.out.println(name2.trim().length() == 0); // JDK1.0就有
-		System.out.println(name2.trim().isEmpty()); // JDK1.6才有
-		System.out.println(name2.trim().equals(""));
+		//測試空值差別
+		// System.out.println(name3 == null);
+		// System.out.println(name2 == null);
+		// System.out.println(name2.trim().length() == 0); // JDK1.0就有
+		// System.out.println(name2.trim().isEmpty()); // JDK1.6才有
+		// System.out.println(name2.trim().equals(""));
 
 		out.println("<HTML>");
-		out.println("<HEAD><TITLE>Hello, " + name + "</TITLE></HEAD>");
+		out.println("<HEAD><TITLE>Hello, " + name2 + "</TITLE></HEAD>");
 		out.println("<BODY>");
-		out.println("Hello, 你好: " + name);
+		out.println("Hello, 你好: " + name2+"<BR>");
+		out.println("Hello, 你好: " + name+"<BR>");
 		out.println("</BODY></HTML>");
 	}
 }
