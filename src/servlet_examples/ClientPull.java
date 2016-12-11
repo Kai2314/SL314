@@ -11,7 +11,7 @@ public class ClientPull extends HttpServlet {
     res.setContentType("text/plain");
     PrintWriter out = res.getWriter();
 
-    res.setHeader("Refresh", "10");
-    out.println(new java.util.Date());
+    res.setHeader("Refresh", "10");//每十秒鐘刷新一次
+    out.println(new java.util.Date());//Date有毫秒
   }
 }

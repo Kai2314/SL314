@@ -4,7 +4,7 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
-public class KeepAlive extends HttpServlet {
+public class KeepAlive extends HttpServlet { 
 
   public void doGet(HttpServletRequest req, HttpServletResponse res)
                                throws ServletException, IOException {

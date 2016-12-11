@@ -4,6 +4,11 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
+/*
+ * 搬家代表的是搬IP
+ * 重要概念:
+ */
+
 public class ClientPullMove extends HttpServlet {
 
   static final String NEW_HOST = "https://tw.yahoo.com";
@@ -13,7 +18,7 @@ public class ClientPullMove extends HttpServlet {
     res.setContentType("text/html");
     PrintWriter out = res.getWriter();
 
-    String newLocation = NEW_HOST + req.getRequestURI();
+    String newLocation = NEW_HOST + req.getRequestURI();// 
 
     res.setHeader("Refresh", "10; URL=" + newLocation);
 
