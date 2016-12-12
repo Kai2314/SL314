@@ -492,6 +492,8 @@ pageEncoding是下指令給伺服器
 		<form action="下一網頁">
 		</form>
 	```
+- 優點:
+	- 主要的瀏覽器皆支持隱藏欄位;瀏覽器不顯示其值；不需
 - 缺點:
 	- 1.只能一連串動態產生Form表單
 	- 2.檢視原始碼，能可看見其值，按全上有漏洞 	
@@ -502,27 +504,66 @@ pageEncoding是下指令給伺服器
 		不要以為Form表單是垃圾
 		OHidden
 			不要放機密資料
-			效能比較好
+			傳一般資料，效能比較好
 	```
 	
 	[](/SL314/images/Image 018.png)
 
+---
+
+## P111 URL重寫
+
+-實作方式
+	- http://server:port/servlet/Rewritten**/12345**
+		- **額外路徑資訊**
+	- http://server:port/servlet/Rewritten/**?sessionId = 12345**
+		- **查詢字串**
+
+- 優點
+	- 瀏覽器、伺服器皆支援；
+- 缺點
+	- 資料曝路在瀏覽器上，安全上漏洞。
+	- 是記使用時困難重重，又難又煩，很少使用
 
 
+---
+
+## P112 Cookie(一)
+
+- 說明: Cookie是一個小小文字檔，以key,value的方式將Seesion Tracking的內容記錄其中，而這個文字檔通常存在你的瀏覽器暫存區或硬碟內，也是一個常用的Session Tracking
+- 實作方式:
+	- **它們都是暫時性的**
+- 優點:
+	- 優雅有效率
+- 缺點
+	- **用戶端瀏覽器可能關閉cookie的設定**	
+	- 限制L最大長度4KB (每家瀏覽器額度都有彈性調整額度) -->(P.S Session 沒有限制)
 
 
+---
 
+## P113 Cookie(二)
 
+- **Cookie(寫出Cookie，取回Cookie)**
+	- **寫到用戶端瀏覽器上**
+	```xml
+		<%
+			response.addCookie(myCookie);//CH05
+		%>
+	```
+	- **取回Cookie**
+	```xml
+	<%
+	Cookie[] cookieList = request.getCookies();//CH04
+	%>
+	```
 
+---
 
+## P116 HttpSession介面(二)
 
-
-
-
-
-
-
-
+- 伺服器實作Session Tracking的原理:
+	- String ID = <font color=red><b>session</b></font>.getId();
 
 
 

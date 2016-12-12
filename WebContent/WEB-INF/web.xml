@@ -23,12 +23,6 @@
 		<res-auth>Container</res-auth>
 	</resource-ref>
 
-	<!-- -->
-	<mime-mapping>
-		<extension>aa106</extension>
-		<mime-type>aa106x</mime-type>
-	</mime-mapping>
-	<!-- -->
 
 
 	<servlet>
