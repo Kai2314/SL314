@@ -14,6 +14,6 @@ public class Session_Get extends HttpServlet {
 
 		HttpSession session = req.getSession();
 		Object myName2 = session.getAttribute("myName2");
-		out.println(myName2);
+	out.println(myName2);
 	}
 }

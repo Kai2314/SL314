@@ -1,33 +1,7 @@
-Á¿¸q:JAVAµ{¦¡»y¨¥(Java Web Application) µ§°O:ªLİÂ¿« Á¿¸q§@Í:§d¥Ã§Ó
+Á¿¸q:JAVAµ{¦¡»y¨¥(Java Web Application) µ§°O:ªLİÂ¿« Á¿¸q§@ªÌ:§d¥Ã§Ó
 ===
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [CH02:¼¶¼g»P§G¸pHTTP Servlet](#ch02¼¶¼g»P§G¸phttp-servlet)
-- [CH03:Servletªº¥Í©R¶g´Á](#ch03servletªº¥Í©R¶g´Á)
-- [CH04:Â^¨ú¸ê°T(HttpServletRequest,ServletConfig,ServerletContext¤¶­±)](#ch04Â^¨ú¸ê°Thttpservletrequestservletconfigserverletcontext¤¶­±)
-	- [P62 ¨ú±oServlet¦Û¨­ªº¸ê°T(¤@)](#p62-¨ú±oservlet¦Û¨­ªº¸ê°T¤@)
-	- [P63 ¨ú±oServlet¦Û¨­ªº¸ê°T(¤G)](#p63-¨ú±oservlet¦Û¨­ªº¸ê°T¤G)
-	- [¨ú±oClientªº¸ê°T(¤Q¤T)](#¨ú±oclientªº¸ê°T¤Q¤T)
-- [CH05:¶Ç°eHTML¸ê°T(HttpServletResponse¤¶­±)](#ch05¶Ç°ehtml¸ê°Thttpservletresponse¤¶­±)
-	- [P88 °ò¥»·§©À](#p88-°ò¥»·§©À)
-	- [¸ê®Æ«¬ºA&¿é¥X¸ê®Æ¬y(¤@)](#¸ê®Æ«¬ºA¿é¥X¸ê®Æ¬y¤@)
-	- [¸ê®Æ«¬ºA&¿é¥X¸ê®Æ¬y(¤G)](#¸ê®Æ«¬ºA¿é¥X¸ê®Æ¬y¤G)
-	- [P91 «ùÄò©Ê³s½u&¦^À³½w½Ä°Ï(¤@)](#p91-«ùÄò©Ê³s½u¦^À³½w½Ä°Ï¤@)
-	- [P92 «ùÄò©Ê³s½u&¦^À³½w½Ä°Ï(¤G) (¥²¦Ò­¶¼Æ)](#p92-«ùÄò©Ê³s½u¦^À³½w½Ä°Ï¤G-¥²¦Ò­¶¼Æ)
-	- [P93 ª¬ºA½X³]©w(¤@)](#p93-ª¬ºA½X³]©w¤@)
-	- [P94 ª¬ºA½X³]©w(¤G)](#p94-ª¬ºA½X³]©w¤G)
-	- [P95](#p95)
-	- [P96](#p96)
-	- [P97 À³¥Î1 - ­«¾É½Ğ¨D](#p97-À³¥Î1-­«¾É½Ğ¨D)
-	- [P98 À³¥Î2-«È¤áºİ´£¨ú](#p98-À³¥Î2-«È¤áºİ´£¨ú)
-	- [P99 not to cache the response](#p99-not-to-cache-the-response)
-	- [P101 ¿ù»~³B²z(¤G)](#p101-¿ù»~³B²z¤G)
-	- [P104 ¿ù»~³B²z(¤­)](#p104-¿ù»~³B²z¤­)
-	- [P162 Directive Elements(1/2)](#p162-directive-elements12)
-		- [ºô­¶¶Ã½Xªº°İÃD](#ºô­¶¶Ã½Xªº°İÃD)
-- [¹Ï¤ù©ñ¦b¸ê®Æ®w](#¹Ï¤ù©ñ¦b¸ê®Æ®w)
-- [PS](#ps)
-- [·Ó¤ù¸É¥R:](#·Ó¤ù¸É¥R)
 
 <!-- /TOC -->
 
@@ -234,9 +208,7 @@ PS:
 ## P96
 - ++**¦^À³¼ĞÀY(Response Header)³]©w(Äò)**++
 
-```xml
- <META
-```
+
 
 **PS**
 ```
@@ -298,30 +270,111 @@ P150 ·íhttp«e­±¥[¤W/ ·|¬O¥ş³¡¸ô®|À£¤W¥h
 - Tell the browser not to caher the response
 - <font color=blue>**¥Øªº:**</font>**Á×§KÂsÄı¾¹¹ï¤å¥óªº§Ö¨ú(cache)**
 - <font color=blue>**¹ê§@¤èªk:**</font>·f°t¨Ï¥Î¥H¤U3ºØ¤èªk¥HÁ×§KÂsÄı¾¹¹ï¤å¥óªº§Ö¨ú
-	- 1 res.getHeader("Cache-Control","no-store");
+	- <font color=red><b>res.getHeader("Cache-Control","no-store");</b></font> //HTTP 1.1
+		- ¦pªG±N¹w³]¬°no-store¡Aªí¥Ü¦¹¤å¥ó¤£À³¸Ó³Q§Ö¨ú¡A¤]¤£¥i¥HÀx¦s¦bproxy¦øªA¾¹·í¤¤
+		- ¦pªG±N¹w³]¬°no-caache¡A(«h¥u)ªí¥Ü¦¹¤å¥ó¤£À³¸Ó³Q§Ö¨ú
+	- <font color=red><b>res.setHeader("Pragma","no-cache");</b></font> //HTTP 1.0
+		-	°ß¤@ªº¦Xªk­È¬° **no-cache**,ªí¥Ü¦¹¤å¥ó¤£À³¸Ó³Q§Ö¨ú¡C
+	-  <font color=red><b>res.setDateHeader("Expires",0);</b></font>
+		-  «ü¤å¥ó¸ê°T¥¢®Äªº®É¶¡
+		-  ¦pªG±N¹w³]¬°0®É¡A«ü¸Ó¤å¥ó¥ß§Y¥¢®Ä¡C
+
+PS.
+```
+- proxy¦øªA¾¹(¥N²z¦øªA¾¹)
+	- ºô¸ô·§½×
+	- ¥Øªº:
+		- ¸`¬Ùºô¸ô¬y¶q
+```
+
+---
+
+## P100 ¿ù»~³B²z(¤@)
+- ¿ù»~³B²z
+	- <font color=blue><b>¥Øªº:</b></font>³B²z«È¤áºİªº¿ù»~(4xx)¡F¦øªA¾¹ºİªº¿ù»~(5xx¡A§tjavax.servlet.ServletException¨Ò¥~³B²z)
+	- **++¹ê§@¤èªk1/3:++**¨Ò¥Îª¬ºA½X(Status Code)¤§³]©w¡A¶i¦æ¿ù»~³B²z¡C
+	- 
+
 ---
 
 ## P101 ¿ù»~³B²z(¤G)
 - ¿ù»~³B²z(Äò)
-	-
+	- **¹ê§@¤èªk2/3:** ¨Ò¥Îª¬ºA½X(Status Code)¤§³]©w + web.xmlÀÉ®×
+	¨Ò¦p:
+```xml
+<web-app>
+<location>/error400.html</location> <!--/¥NªíIBM¸ê®Æ§¨-->
+</web-app>
+```
+
+---
+## P102 ¿ù»~³B²z(¤T)
+- ¿ù»~³B²z(Äò):
+	```xml
+		<%@ page errorPage="error.jsp"%> <!--error.jsp¹w³]¬Onone-->
+		<%@ page isErrorPage="true"%><!--isErrorPage¹w³]¬Ofalse-->
+	```
+```
+- ¦n°O:·í§Ú©I¥s§A¹ê¡A§A­n»¡¬Oªº¡A§Ú¬Oxxx
+- ±M®×¤£·|¥Î¨ì¡A¬Oµ¹¤p«¬±M®×¨Ï¥Î¡C
+- °£«DisErrorPage¦³µù¥U
+```
+
+---
+
+## P103 À³¥Î4-¿ù»~³B²z(¥|)
+
+- ¸É¥R1:**¨Ò¥~(exception)¤Î**javax.servlet.**ServletException¤§ÄdºI**
+	- «ü¦³Ä~©Ó¦Ûjava.lang.**RuntimeException**;java.io.**IOException**;javax.servlet.**ServletException**¤§¨Ò¥~¡A¤~¥i¥H©ñ¤â¥æ¥Ñ¦øªA¾¹³B²z¡C
+	- ¨ä¥LÃş«¬ªº¨Ò¥~(exception)¡A¥²¶·¥ÑServlet¦Û¤vÄdºI¡A¥H¤U3,4­ÓServletException«Øºc¤¸¥i¥H¥]¸Ë¥ô¦óÃş«¬ªºexception¡AÅı¦øªA¾¹¦³¿ìªk¤§¹D¤ŞªkServletExceptionªº"°İÃD®Ú·½"
+	- public ServletException()
+	- public ServletException(String message)
+	- public ServletException(Throwable rootCause)
+	- public ServletException(Tring message,Throwable rootCause)
+
+```
+- Throwable §terror¦b¸Ì­±¤F
+- throws¬O©I¥s¦¹¤èªkªºµ{¦¡
+- ¤ì°¨¥X«°Á|¨Ò
+- 500¿ù»~ NullPointerException Ä~©Ó RunnableException
+
+```
+
 ---
 ## P104 ¿ù»~³B²z(¤­)
 - ¸É¥R1:¨Ò¥~(exception)¤Î**javax.servlet.ServletException¤§ÄdºI**
 	- ¦øªAºİªº¿ù»~¡A¥i¥ÑÄdºI(catch)**javax.servlet.ServletException**«á±N¤§¥á¥X **(throw):**
-	(1:)¥æ¥Ñ¦øªA¾¹³B²z¡A©Î
+	(1:)¥æ¥Ñ¦øªA¾¹³B²z¡A©Î **<--500°ïÅ|·N«ä**
 	(2:)¥æµ¹web.xmlÀÉ©Ò«ü©wªºµ{¦¡³B²z¡Aweb.xml¦p¤U©Ò¥Ü:
+	
 	```xml
 	<web-app>
 		<error-page>
 			<exception-type>javax.servlet.ServletException</exception-type>
 			<location>/ErrorDisplay</location>
+			<!--
+				1.³o¬O¤@­Ó°ÊºAªºServletµ{¦¡
+				2.can do anything
+			-->			
 		</error-page>
 	</web-app>
-	<!--
-		1.³o¬O¤@­Ó°ÊºAªºServletµ{¦¡
-		2.can do anything
-	-->
 	```
+	
+	
+	```
+		¤@­Ó°ª¯Åªºµ{¦¡»y¨¥¡A­n¶i¦æ°ª¯Åªº¿ù»~³B²z¡C
+			¦pªG¬Y¨Ç®É­Ô­n§@¿ù»~®É­Ô¥[¤u¡A½Ğ¬İErrorDisplay.java½d¨Ò¡C
+		°²¦p¿ù»~¬O500 ¨SÃö«Y ¥i¥H·í³õDebug
+	```
+---	
+
+## P106
+
+---
+
+## 
+
+---
 
 ## P162 Directive Elements(1/2)
 -  Directive Elements¥D­n¥Î¨Ó´£¨Ñ¾ã­Óºô­¶ªº»¡©ú
@@ -345,7 +398,7 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 	- ­nÂà½X½Ğ¨Ï¥ÎBig5 ->ASII
 	¤£­n¨Ï¥ÎBig5->Unicode(¦]¬°¦³Utf-16
 	)
-	- ¤pµ²½×: ¦pªG§Æ±æ¥ô¦ó½s¿è¾¹m¨S¦³½s½X¿ù»~¡A½Ğ¨Ï¥ÎpageEncoding=Big5
+	- ¤pµ²½×: ¦pªG§Æ±æ¥ô¦ó½s¿è¾¹³£¨S¦³½s½X¿ù»~¡A½Ğ¨Ï¥ÎpageEncoding=Big5
 
 - UTF-8 ¦³(ÀÉ­º¦³µLBOM)¡A·L³nªº°İÃD¡C
 °O¨Æ¥»·|¦Û°Ê¥Í¥X¨Ó
@@ -366,17 +419,165 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 			- ¹Î¶¤¶}µo­n²Î¤@
 	- 6.¶³ºİ
 
-:warning: <font color=Red>**Á`µ²:¤@­ÓÀô¸`¿ù¤F¡A´N·|¥ş¿ù¡C**</font>
-
-
-
+:warning: <font color=Red><b>Á`µ²:¤@­ÓÀô¸`¿ù¤F¡A´N·|¥ş¿ù¡C</b></font>
 
 ---
+
+# CH06 Sessiion
+
+---
+## P107 Sessiion Tracking
+
+**­«ÂI:ºû«ùª¬ºA**
+- 1 Seesion Tracking(¶iµ{°lÂÜ) - °ò¥»·§©À 
+	- Ãş¦ü·|¸Ü 
+		- ¦ı¬O³£¤£­n¥Î
+	- µ²½×:**¨Ï¥ÎSession Tracking´N¦n**
+- 2 ÁôÂÃÄæ¦ì(Hidden Form Field)
+- 3 URL­«¼g
+- 4 Cookie
+- 5 **¨Ï¥ÎSession Tracking API** (­«ÂI)
+
+```
+	2,3,4³£¦³¦w¥ş¤Wªºº|¬}
+```
+ 
+---
+
+## P108 °ò¥»·§©À
+
+- °lÂÜ¨Ï¥ÎªÌ
+	-  ¤@­Ó¨Ï¥ÎªÌ¦b**³sÄòÁpµ²¦h­Ó­¶­±**®É¡A**¡iÁÊª«¨®¡j¨Ï¥Î°O¾ĞÅé**
+	- **¡i­Ó¤H¤ÆªA°È®×¨Ò¡j¨Ï¥Î¸ê®Æ®w**
+	
+	```
+		°O¾ĞÅé
+		¸ê®Æ®w
+	```
+- **HTTP Äİ©óStatelessªº³q¨ó©w**¡A¦øªA¾¹µLªk°O¦í¨Ï¥ÎªÌ¡A¥¦¥uÃö¤ßRequest©MResponse¡A_**¤@¥¹¦^À³µ²§ô¡A¦øªA¾¹»PÂsÄı¾¹¤§¶¡ªº³s½u«K·|µ²§ô¡C**_
+
+	``
+		²Ä¤@­Ó¯ÊÂI
+			Socketªº°İÃD
+			·|©µ¦ù¤@­Ó±M¦³¦Wµü
+				¸Ñ¨MSocket°İÃD¡A©ñ¦b½w½Ä°Ï¡C
+		²Ä¤G­Ó¯ÊÂI
+			
+	``
+
+---
+
+## P109 °ò¥»·§©À
+
+- ¥Øªº:
+	- ÅıWeb¦øªA¾¹¯à°÷°lÂÜ¨Ï¥ÎªÌªºª¬ºA(state)ºÙ¤§**Sesstion Tracking**¡A¥i¨Ï«e¤@­Ó½Ğ¨D©Ò¶Ç°eªº¸ê®Æ
+	
+	
+- µù:
+	- 1.«e¤TºØ¬O¶Ç²Î¤èªk¡A¦U¦³¨ä¯ÊÂI¡A³Ì«á¤@ºØ¬O¥Ø«e³Ì±`¥Î¡A³Ì¦³®Äªº¸Ñ¨M¤è®×¡C //¦³¦w¥ş¤Wªºº|¬}
+	- 2.´¿¸g´£¹LHTTP¨­¤ÀÅçÃÒ¾÷¨î//P71~P72
+
+	```
+		Oµn¤J¨Ò¤l:(authntication)
+			ª½Ä±·|°lÂÜ¡A¦ı¹ê»Ú¤W¨S¦³°lÂÜ
+	```
+
+---
+
+## P110 ÁôÂÃÄæ¦ì(Hidden Form Field)
+-  »¡©ú:**¨Ï¥ÎHTML¤º²{¦³ªºHiddenÄİ©Ê**
+- ¹ê§@¤è¦¡:
+	- «e¤@ºô­¶:
+	```xml
+		<form action="¤U¤@ºô­¶">
+		</form>
+	```
+- ¯ÊÂI:
+	- 1.¥u¯à¤@³s¦ê°ÊºA²£¥ÍFormªí³æ
+	- 2.ÀËµø­ì©l½X¡A¯à¥i¬İ¨£¨ä­È¡A«ö¥ş¤W¦³º|¬} 	
+	
+	
+	
+	```
+		¤£­n¥H¬°Formªí³æ¬O©U§£
+		OHidden
+			¤£­n©ñ¾÷±K¸ê®Æ
+			®Ä¯à¤ñ¸û¦n
+	```
+	
+	[](/SL314/images/Image 018.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```
 
 ---
-	¥X²{RunetimeException³q±`m¬O¦Û¤v²Ê¤ßªº°İÃD
+	¥X²{RunetimeException³q±`³£¬O¦Û¤v²Ê¤ßªº°İÃD
 		¶ı¶ıªº¨Ò¤l
 
 	Runetime
@@ -401,7 +602,7 @@ SL314-DBGifReader
 ---
 ¥i¥H¤@¹ï¦h¡A
 ¬Æ»ò³q³q¸Ñ¨M
-¤£·|¦³"«áÍ»\«eÍ°İÃD"
+¤£·|¦³"«áªÌ»\«eªÌ°İÃD"
 
 Q ½Ğ¨D°Ñ¼Æ
 Src¬O
@@ -434,7 +635,7 @@ Reader
 PrintWriter
 getOutputStream
 ®t§O
-«eÍ·|À°§A§A¶i¦æ½s½X(Âàcharset)
+«eªÌ·|À°§A§A¶i¦æ½s½X(Âàcharset)
 
 
 
@@ -467,7 +668,7 @@ req.getSession()
 ![](https://i.imgur.com/TWeY8n3.jpg)
 - Error¬O¼s®q­ì¤l¼u¡A
 	- AssertionError¥i¥H«s¤@Án¦b¦º(java 1.4)¤~¦³
-	- ...Error ¦wÜªº¦º¥h
+	- ...Error ¦wÀRªº¦º¥h
 - Exception
 	- ....Exception
 	- SQLException

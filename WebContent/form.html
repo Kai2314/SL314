@@ -13,7 +13,11 @@
   <FORM METHOD="get" ACTION="Hello">
       
           請輸入您的名字!
-    <INPUT TYPE="TEXT" NAME="name" VALUE="peter1吳永志"><p>
+    <!--<INPUT TYPE="TEXT"  NAME="name" VALUE="peter1吳永志"><p>-->
+    <INPUT TYPE="hidden"  NAME="name" VALUE="peter1吳永志"><p><!-- 
+    	1.只能一連串動態產生Form表單
+    	2.檢視原始碼，能可看見其值，按全上有漏洞 
+    -->
     <INPUT TYPE="SUBMIT">
   </FORM>
 
