@@ -356,35 +356,6 @@ pageEncoding是下指令給伺服器
 - 編碼的手有哪幾隻?
 	- 1.瀏覽器
 	- 2.程式 (Servlet)<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CH02:撰寫與佈署HTTP Servlet](#ch02撰寫與佈署http-servlet)
-- [CH03:Servlet的生命週期](#ch03servlet的生命週期)
-- [CH04:擷取資訊(HttpServletRequest,ServletConfig,ServerletContext介面)](#ch04擷取資訊httpservletrequestservletconfigserverletcontext介面)
-	- [P62 取得Servlet自身的資訊(一)](#p62-取得servlet自身的資訊一)
-	- [P63 取得Servlet自身的資訊(二)](#p63-取得servlet自身的資訊二)
-	- [取得Client的資訊(十三)](#取得client的資訊十三)
-- [CH05:傳送HTML資訊(HttpServletResponse介面)](#ch05傳送html資訊httpservletresponse介面)
-	- [P88 基本概念](#p88-基本概念)
-	- [資料型態&輸出資料流(一)](#資料型態輸出資料流一)
-	- [資料型態&輸出資料流(二)](#資料型態輸出資料流二)
-	- [P91 持續性連線&回應緩衝區(一)](#p91-持續性連線回應緩衝區一)
-	- [P92 持續性連線&回應緩衝區(二) (必考頁數)](#p92-持續性連線回應緩衝區二-必考頁數)
-	- [P93 狀態碼設定(一)](#p93-狀態碼設定一)
-	- [P94 狀態碼設定(二)](#p94-狀態碼設定二)
-	- [P95](#p95)
-	- [P96](#p96)
-	- [P97 應用1 - 重導請求](#p97-應用1-重導請求)
-	- [P98 應用2-客戶端提取](#p98-應用2-客戶端提取)
-	- [P99 not to cache the response](#p99-not-to-cache-the-response)
-	- [P101 錯誤處理(二)](#p101-錯誤處理二)
-	- [P104 錯誤處理(五)](#p104-錯誤處理五)
-	- [P162 Directive Elements(1/2)](#p162-directive-elements12)
-		- [網頁亂碼的問題](#網頁亂碼的問題)
-- [圖片放在資料庫](#圖片放在資料庫)
-- [PS](#ps)
-- [照片補充:](#照片補充)
-
-<!-- /TOC -->
 	- 3.編輯器
 	- 4.伺服器
 	- 5.WorkSpace (Eclipse)
@@ -395,21 +366,7 @@ pageEncoding是下指令給伺服器
 			- 團隊開發要統一
 	- 6.雲端
 
-:::success
 :warning: <font color=Red>**總結:一個環節錯了，就會全錯。**</font>
-:::
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
