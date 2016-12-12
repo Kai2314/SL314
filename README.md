@@ -1,13 +1,13 @@
-Á¿¸q:JAVAµ{¦¡»y¨¥(Java Web Application) µ§°O:ªLİÂ¿« Á¿¸q§@ªÌ:§d¥Ã§Ó
+Á¿¸q:JAVAµ{¦¡»y¨¥(Java Web Application) µ§°O:ªLİÂ¿« Á¿¸q§@Í:§d¥Ã§Ó
 ===
 
 [TOC]
 
 ---
 
-
-
-# CH01:Web Application ·§Æ[»P¶}µoÀô¹Ò·Ç³Æ
+<h1 name="CH01">
+	CH01:Web Application ·§Æ[»P¶}µoÀô¹Ò·Ç³Æ
+</h1>
 
 ---
 
@@ -19,8 +19,9 @@
 
 ---
 
-# P48 Init Parameter(ªì©l°Ñ¼Æ)
-<a name="p48">p48</a>
+<h2 name="P48">
+	P48 Init Parameter(ªì©l°Ñ¼Æ)
+</h2>
 - Init Parameter(ªì©l°Ñ¼Æ)
 	- ³]©w:web.xmlÀÉ®×³]©w¦p¤U
 ```xml
@@ -51,7 +52,7 @@ String initial_Value = getInitParamet
 - **¨ú±oServletªì©l°Ñ¼Æ**
 	- ``String getInitParameter(String name)`` ¨ú±oServletªì©l°Ñ¼Æªº¡u­È¡v
 	- ``Enumeration getInitParameterNames()`` ¦CÁ|Servletªì©l°Ñ¼Æªº¡u°Ñ¼Æ¡v
-	- µù:<font color=red>»İ°t¦Xweb.xml;</font>(°Ñ¨£<a href=#p48>p48</a>  ¤Î¤U¤@­¶µ{¦¡¤ù¬q)
+	- µù:<font color=red>»İ°t¦Xweb.xml;</font>(°Ñ¨£p48¤Î¤U¤@­¶µ{¦¡¤ù¬q)
 - **¨ú±oServlet¦WºÙ,Àô¹Ò(Context)**
 	- ``String getServletName()`` ¨ú±o¡uServlet¦WºÙ¡v(Servlet Content)
 - **»¡©ú:¥H¤W§¡ÄİServletConfig¤¶­±(¥ÑGenericServletÃş§O¹ê§@)¤§method**¡A¬Gµ{¦¡¤ºª½±µ¨Ï¥Î¡C
@@ -109,7 +110,7 @@ while(enum.hasMoreElements){
 		- ¦bHTTP Servlet¡A¦¹¤èªk·|³]©w¡uResponse Header(¦^À³¼ĞÀY)¡v¤¤Content-Type¼ĞÀY(header)
 ## ¸ê®Æ«¬ºA&¿é¥X¸ê®Æ¬y(¤G)
 - ¤å¦r¸ê®Æ(characte text)¿é¥X
-	- ¨Ò 
+	- ¨Ò
 		```java
 			res.setContentType("text/html;charset=UTF-8")
 			PrintWriter out = res.getWriter();
@@ -151,10 +152,10 @@ while(enum.hasMoreElements){
 		- <font color=red>**¥Øªº:´£°ª½w½Ä°Ï¤j¤p¡A´£°ª®Ä¯à
 		­ì¦]:´î¤ÖSocketªº¤Á´«**
 		</font>
-		- **P.S** 
+		- **P.S**
 			- ³q±`¤Hªº­@©Ê¥u¦³3.6¬í¡Aµn¤J­@©Ê¥u¦³0¬í¡C
 			- ¼·±µ®É¥NºCºC¶]·Ó¤ùªº±¡ªp¡A´N¬O8Kªº½w½Ä°Ï
-		
+
 	- **int res.getBufferSize()**
 		Returns the actual buffer size used for the response.
 	- **boolean res.isCommitted()**
@@ -175,7 +176,7 @@ while(enum.hasMoreElements){
 - ª¬ºA½X(Status Code)
 	- <b>¥Øªº:</b> ÂÇ¥Ñª¬ºA½X(Status Code)ªº¨Ï¥Î¡AServlet±N¥i§@§ó¦hªº¨Æ±¡¡A¨Ò¦p¡A¥¦¥i¥H**­«¾É**(redirect)¤@­Órequest¡A©Î¬O**¦^³ø¿ù»~**
 	©Ò¦³ªºª¬ºA½X¨£:[ªş¿ı¤­](https://i.imgur.com/EF3Fyff.png)
-	- **1xx:** 
+	- **1xx:**
 
 ```
 PS.
@@ -188,13 +189,13 @@ PS.
 	- **void res.setStatus(int sc)**
 		- ³]©wHTTPª¬ºA½X(Status Code)
 		- ¥i¥Î¤@¯ë¼Æ­È¡A©Î**HttpServletResponse±µ­±©Ò©w¸qªºSC_XXX±`¼Æ¨Óªí¥Ü**¡F»İ©ó°e¥X(Response)¦^À³¥DÅé¤§«e¨Ï¥Î¡C
-		- void 
+		- void
 
 PS:
 ```
 ¥i¥H°t¦XP101
 	¿ù»~³B²z : setSatus code + web.xml
-	
+
 ```
 
 ---
@@ -206,14 +207,14 @@ PS:
 - ++**¦^À³¼ĞÀY(Response Header)³]©w(Äò)**++
 
 ```xml
- <META 
+ <META
 ```
 
 **PS**
 ```
 ¤¤¤å¶Ã½X¦³¤T¦¸:
 JSP¤@¥X¨Ó´N¦³¤­°¦¤â¤F(¶Ã½X°İÃD)¡C
-	
+
 ```
 
 ---
@@ -234,9 +235,9 @@ JSP¤@¥X¨Ó´N¦³¤­°¦¤â¤F(¶Ã½X°İÃD)¡C
 
 
 P150 ·íhttp«e­±¥[¤W/ ·|¬O¥ş³¡¸ô®|À£¤W¥h
-	
+
 - ±×½u(/)¤À¬°:
-	html 
+	html
 	CSS
 	AJS
 	jQuery
@@ -268,13 +269,13 @@ P150 ·íhttp«e­±¥[¤W/ ·|¬O¥ş³¡¸ô®|À£¤W¥h
 ## P99 not to cache the response
 - Tell the browser not to caher the response
 - <font color=blue>**¥Øªº:**</font>**Á×§KÂsÄı¾¹¹ï¤å¥óªº§Ö¨ú(cache)**
-- <font color=blue>**¹ê§@¤èªk:**</font>·f°t¨Ï¥Î¥H¤U3ºØ¤èªk¥HÁ×§KÂsÄı¾¹¹ï¤å¥óªº§Ö¨ú 
+- <font color=blue>**¹ê§@¤èªk:**</font>·f°t¨Ï¥Î¥H¤U3ºØ¤èªk¥HÁ×§KÂsÄı¾¹¹ï¤å¥óªº§Ö¨ú
 	- 1 res.getHeader("Cache-Control","no-store");
 ---
 
 ## P101 ¿ù»~³B²z(¤G)
 - ¿ù»~³B²z(Äò)
-	- 
+	-
 ---
 ## P104 ¿ù»~³B²z(¤­)
 - ¸É¥R1:¨Ò¥~(exception)¤Î**javax.servlet.ServletException¤§ÄdºI**
@@ -313,17 +314,17 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 - charset·|§ïÅÜ(ÀËµø->½s½X)ªº¹ïÀ³¡C
 	- ±qEclipse (export->file)¡A·|Âà¥X¹ïÀ³pageEncodingªº½s½X¡C
 	- ±j¯P«ØÄ³:°²¦p±qEclipse¾É¥X¨ìUE¤£­n¶Ã°Ê½s½X¡C
-	- ­nÂà½X½Ğ¨Ï¥ÎBig5 ->ASII 
+	- ­nÂà½X½Ğ¨Ï¥ÎBig5 ->ASII
 	¤£­n¨Ï¥ÎBig5->Unicode(¦]¬°¦³Utf-16
 	)
-	- ¤pµ²½×: ¦pªG§Æ±æ¥ô¦ó½s¿è¾¹³£¨S¦³½s½X¿ù»~¡A½Ğ¨Ï¥ÎpageEncoding=Big5
+	- ¤pµ²½×: ¦pªG§Æ±æ¥ô¦ó½s¿è¾¹m¨S¦³½s½X¿ù»~¡A½Ğ¨Ï¥ÎpageEncoding=Big5
 
 - UTF-8 ¦³(ÀÉ­º¦³µLBOM)¡A·L³nªº°İÃD¡C
 °O¨Æ¥»·|¦Û°Ê¥Í¥X¨Ó
 
 ```
- 
-### ºô­¶¶Ã½Xªº°İÃD 
+
+### ºô­¶¶Ã½Xªº°İÃD
 - ½s½Xªº¤â¦³­ş´X°¦?
 	- 1.ÂsÄı¾¹
 	- 2.µ{¦¡ (Servlet)
@@ -336,35 +337,35 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 		- ª`·N:
 			- ¹Î¶¤¶}µo­n²Î¤@
 	- 6.¶³ºİ
- 
+
 :::success
 :warning: <font color=Red>**Á`µ²:¤@­ÓÀô¸`¿ù¤F¡A´N·|¥ş¿ù¡C**</font>
 :::
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
---- 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
 ```
 
 ---
-	¥X²{RunetimeException³q±`³£¬O¦Û¤v²Ê¤ßªº°İÃD
+	¥X²{RunetimeException³q±`m¬O¦Û¤v²Ê¤ßªº°İÃD
 		¶ı¶ıªº¨Ò¤l
-		
-	Runetime	
+
+	Runetime
 ---
 
 ---
@@ -386,7 +387,7 @@ SL314-DBGifReader
 ---
 ¥i¥H¤@¹ï¦h¡A
 ¬Æ»ò³q³q¸Ñ¨M
-¤£·|¦³"«áªÌ»\«eªÌ°İÃD"
+¤£·|¦³"«áÍ»\«eÍ°İÃD"
 
 Q ½Ğ¨D°Ñ¼Æ
 Src¬O
@@ -419,7 +420,7 @@ Reader
 PrintWriter
 getOutputStream
 ®t§O
-«eªÌ·|À°§A§A¶i¦æ½s½X(Âàcharset)
+«eÍ·|À°§A§A¶i¦æ½s½X(Âàcharset)
 
 
 
@@ -452,7 +453,7 @@ req.getSession()
 ![](https://i.imgur.com/TWeY8n3.jpg)
 - Error¬O¼s®q­ì¤l¼u¡A
 	- AssertionError¥i¥H«s¤@Án¦b¦º(java 1.4)¤~¦³
-	- ...Error ¦wÀRªº¦º¥h
+	- ...Error ¦wÜªº¦º¥h
 - Exception
 	- ....Exception
 	- SQLException
@@ -471,5 +472,3 @@ req.getSession()
 
 1210¥\½Ò
 ![](https://i.imgur.com/zH1H9YZ.png)
-
-
