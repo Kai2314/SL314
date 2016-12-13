@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>README.markdown—C:\Users\Administrator\git\SL314</title>
+    <style type="text/css">
+    html{font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}body{margin: 0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display: block}audio,canvas,progress,video{display: inline-block;vertical-align: baseline}audio:not([controls]){display: none;height: 0}[hidden],template{display: none}a{background: transparent}a:active,a:hover{outline: 0}abbr[title]{border-bottom: 1px dotted}b,strong{font-weight: bold}dfn{font-style: italic}h1{font-size: 2em;margin: 0.67em 0}mark{background: #ff0;color: #000}small{font-size: 80%}sub,sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline}sup{top: -0.5em}sub{bottom: -0.25em}img{border: 0}svg:not(:root){overflow: hidden}figure{margin: 1em 40px}hr{box-sizing: content-box;height: 0}pre{overflow: auto}code,kbd,pre,samp{font-family: monospace, monospace;font-size: 1em}button,input,optgroup,select,textarea{color: inherit;font: inherit;margin: 0}button{overflow: visible}button,select{text-transform: none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance: button;cursor: pointer}button[disabled],html input[disabled]{cursor: default}button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding: 0}input{line-height: normal}input[type="checkbox"],input[type="radio"]{box-sizing: border-box;padding: 0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height: auto}input[type="search"]{-webkit-appearance: textfield;box-sizing: content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance: none}fieldset{border: 1px solid #c0c0c0;margin: 0 2px;padding: 0.35em 0.625em 0.75em}legend{border: 0;padding: 0}textarea{overflow: auto}optgroup{font-weight: bold}table{border-collapse: collapse;border-spacing: 0}td,th{padding: 0}*{box-sizing: border-box}input,select,textarea,button{font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"}body{min-width: 1020px;font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";color: #333;background-color: #fff}a{color: #4183c4;text-decoration: none}a:hover,a:active{text-decoration: underline}hr,.rule{height: 0;margin: 15px 0;overflow: hidden;background: transparent;border: 0;border-bottom: 1px solid #ddd}hr:before,.rule:before{display: table;content: ""}hr:after,.rule:after{display: table;clear: both;content: ""}h1,h2,h3,h4,h5,h6{margin-top: 15px;margin-bottom: 15px;line-height: 1.1}h1{font-size: 30px}h2{font-size: 21px}h3{font-size: 16px}h4{font-size: 14px}h5{font-size: 12px}h6{font-size: 11px}small{font-size: 90%}blockquote{margin: 0}.lead{margin-bottom: 30px;font-size: 20px;font-weight: 300;color: #555}.text-muted{color: #999}.text-danger{color: #bd2c00}.text-emphasized{font-weight: bold;color: #333}ul,ol{padding: 0;margin-top: 0;margin-bottom: 0}ol ol,ul ol{list-style-type: lower-roman}ul ul ol,ul ol ol,ol ul ol,ol ol ol{list-style-type: lower-alpha}dd{margin-left: 0}tt,code{font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;font-size: 12px}pre{margin-top: 0;margin-bottom: 0;font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace}#realtime .status{overflow: visible;position: absolute;top: -5px;left: 0;background: url("/public/images/github-status.png");width: 26px;height: 26px;display: block;margin: 0 5px 0 0}#realtime .up{background-position: 0 0}#realtime .problem{background-position: 0 -53px}#realtime .down{background-position: 0 -26px}.container{max-width: 920px;margin: 0 auto 20px auto}#header{background: #FAFAFA;background: -moz-linear-gradient(#FAFAFA, #EAEAEA);background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eaeaea')";border-bottom: 1px solid #CACACA;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4),0 0 10px rgba(0, 0, 0, 0.1)}#markup{padding: 3px}#markup article{padding-top: 30px}.markdown-body{overflow: hidden;font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;font-size: 16px;line-height: 1.6;word-wrap: break-word}.markdown-body>*:first-child{margin-top: 0 !important}.markdown-body>*:last-child{margin-bottom: 0 !important}.markdown-body .absent{color: #c00}.markdown-body .anchor{position: absolute;top: 0;left: 0;display: block;padding-right: 6px;padding-left: 30px;margin-left: -30px}.markdown-body .anchor:focus{outline: none}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{position: relative;margin-top: 1em;margin-bottom: 16px;font-weight: bold;line-height: 1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{display: none;color: #000;vertical-align: middle}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{padding-left: 8px;margin-left: -30px;text-decoration: none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{display: inline-block}.markdown-body h1 tt,.markdown-body h1 code,.markdown-body h2 tt,.markdown-body h2 code,.markdown-body h3 tt,.markdown-body h3 code,.markdown-body h4 tt,.markdown-body h4 code,.markdown-body h5 tt,.markdown-body h5 code,.markdown-body h6 tt,.markdown-body h6 code{font-size: inherit}.markdown-body h1{padding-bottom: 0.3em;font-size: 2.25em;line-height: 1.2;border-bottom: 1px solid #eee}.markdown-body h1 .anchor{line-height: 1}.markdown-body h2{padding-bottom: 0.3em;font-size: 1.75em;line-height: 1.225;border-bottom: 1px solid #eee}.markdown-body h2 .anchor{line-height: 1}.markdown-body h3{font-size: 1.5em;line-height: 1.43}.markdown-body h3 .anchor{line-height: 1.2}.markdown-body h4{font-size: 1.25em}.markdown-body h4 .anchor{line-height: 1.2}.markdown-body h5{font-size: 1em}.markdown-body h5 .anchor{line-height: 1.1}.markdown-body h6{font-size: 1em;color: #777}.markdown-body h6 .anchor{line-height: 1.1}.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre{margin-top: 0;margin-bottom: 16px}.markdown-body hr{height: 4px;padding: 0;margin: 16px 0;background-color: #e7e7e7;border: 0 none}.markdown-body ul,.markdown-body ol{padding-left: 2em}.markdown-body ul.no-list,.markdown-body ol.no-list{padding: 0;list-style-type: none}.markdown-body ul ul,.markdown-body ul ol,.markdown-body ol ol,.markdown-body ol ul{margin-top: 0;margin-bottom: 0}.markdown-body li>p{margin-top: 16px}.markdown-body dl{padding: 0}.markdown-body dl dt{padding: 0;margin-top: 16px;font-size: 1em;font-style: italic;font-weight: bold}.markdown-body dl dd{padding: 0 16px;margin-bottom: 16px}.markdown-body blockquote{padding: 0 15px;color: #777;border-left: 4px solid #ddd}.markdown-body blockquote>:first-child{margin-top: 0}.markdown-body blockquote>:last-child{margin-bottom: 0}.markdown-body table{display: block;width: 100%;overflow: auto;word-break: normal;word-break: keep-all}.markdown-body table th{font-weight: bold}.markdown-body table th,.markdown-body table td{padding: 6px 13px;border: 1px solid #ddd}.markdown-body table tr{background-color: #fff;border-top: 1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color: #f8f8f8}.markdown-body img{max-width: 100%;box-sizing: border-box}.markdown-body span.frame{display: block;overflow: hidden}.markdown-body span.frame>span{display: block;float: left;width: auto;padding: 7px;margin: 13px 0 0;overflow: hidden;border: 1px solid #ddd}.markdown-body span.frame span img{display: block;float: left}.markdown-body span.frame span span{display: block;padding: 5px 0 0;clear: both;color: #333}.markdown-body span.align-center{display: block;overflow: hidden;clear: both}.markdown-body span.align-center>span{display: block;margin: 13px auto 0;overflow: hidden;text-align: center}.markdown-body span.align-center span img{margin: 0 auto;text-align: center}.markdown-body span.align-right{display: block;overflow: hidden;clear: both}.markdown-body span.align-right>span{display: block;margin: 13px 0 0;overflow: hidden;text-align: right}.markdown-body span.align-right span img{margin: 0;text-align: right}.markdown-body span.float-left{display: block;float: left;margin-right: 13px;overflow: hidden}.markdown-body span.float-left span{margin: 13px 0 0}.markdown-body span.float-right{display: block;float: right;margin-left: 13px;overflow: hidden}.markdown-body span.float-right>span{display: block;margin: 13px auto 0;overflow: hidden;text-align: right}.markdown-body code,.markdown-body tt{padding: 0;padding-top: 0.2em;padding-bottom: 0.2em;margin: 0;font-size: 85%;background-color: rgba(0,0,0,0.04);border-radius: 3px}.markdown-body code:before,.markdown-body code:after,.markdown-body tt:before,.markdown-body tt:after{letter-spacing: -0.2em;content: "\00a0"}.markdown-body code br,.markdown-body tt br{display: none}.markdown-body del code{text-decoration: inherit}.markdown-body pre>code{padding: 0;margin: 0;font-size: 100%;word-break: normal;white-space: pre;background: transparent;border: 0}.markdown-body .highlight{margin-bottom: 16px}.markdown-body .highlight pre,.markdown-body pre{padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: #f7f7f7;border-radius: 3px}.markdown-body .highlight pre{margin-bottom: 0;word-break: normal}.markdown-body pre{word-wrap: normal}.markdown-body pre code,.markdown-body pre tt{display: inline;max-width: initial;padding: 0;margin: 0;overflow: initial;line-height: inherit;word-wrap: normal;background-color: transparent;border: 0}.markdown-body pre code:before,.markdown-body pre code:after,.markdown-body pre tt:before,.markdown-body pre tt:after{content: normal}.markdown-body kbd{display: inline-block;padding: 3px 5px;font-size: 11px;line-height: 10px;color: #555;vertical-align: middle;background-color: #fcfcfc;border: solid 1px #ccc;border-bottom-color: #bbb;border-radius: 3px;box-shadow: inset 0 -1px 0 #bbb}.codehilite{background: #ffffff}.codehilite .c{color: #999988;font-style: italic}.codehilite .err{color: #a61717;background-color: #e3d2d2}.codehilite .k{color: #000000;font-weight: bold}.codehilite .o{color: #000000;font-weight: bold}.codehilite .cm{color: #999988;font-style: italic}.codehilite .cp{color: #999999;font-weight: bold}.codehilite .c1{color: #999988;font-style: italic}.codehilite .cs{color: #999999;font-weight: bold;font-style: italic}.codehilite .gd{color: #000000;background-color: #ffdddd}.codehilite .gd .x{color: #000000;background-color: #ffaaaa}.codehilite .ge{color: #000000;font-style: italic}.codehilite .gr{color: #aa0000}.codehilite .gh{color: #999999}.codehilite .gi{color: #000000;background-color: #ddffdd}.codehilite .gi .x{color: #000000;background-color: #aaffaa}.codehilite .go{color: #888888}.codehilite .gp{color: #555555}.codehilite .gs{font-weight: bold}.codehilite .gu{color: #aaaaaa}.codehilite .gt{color: #aa0000}.codehilite .kc{color: #000000;font-weight: bold}.codehilite .kd{color: #000000;font-weight: bold}.codehilite .kp{color: #000000;font-weight: bold}.codehilite .kr{color: #000000;font-weight: bold}.codehilite .kt{color: #445588;font-weight: bold}.codehilite .m{color: #009999}.codehilite .s{color: #d14}.codehilite .na{color: #008080}.codehilite .nb{color: #0086B3}.codehilite .nc{color: #445588;font-weight: bold}.codehilite .no{color: #008080}.codehilite .ni{color: #800080}.codehilite .ne{color: #990000;font-weight: bold}.codehilite .nf{color: #990000;font-weight: bold}.codehilite .nn{color: #555555}.codehilite .nt{color: #000080}.codehilite .nv{color: #008080}.codehilite .ow{color: #000000;font-weight: bold}.codehilite .w{color: #bbbbbb}.codehilite .mf{color: #009999}.codehilite .mh{color: #009999}.codehilite .mi{color: #009999}.codehilite .mo{color: #009999}.codehilite .sb{color: #d14}.codehilite .sc{color: #d14}.codehilite .sd{color: #d14}.codehilite .s2{color: #d14}.codehilite .se{color: #d14}.codehilite .sh{color: #d14}.codehilite .si{color: #d14}.codehilite .sx{color: #d14}.codehilite .sr{color: #009926}.codehilite .s1{color: #d14}.codehilite .ss{color: #990073}.codehilite .bp{color: #999999}.codehilite .vc{color: #008080}.codehilite .vg{color: #008080}.codehilite .vi{color: #008080}.codehilite .il{color: #009999}
+    </style>
+    <style type="text/css">
+      .markdown-body hr{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC")}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="markup">
+        <article id="content" class="markdown-body">
+          <h1>講義:JAVA程式語言(Java Web Application) 筆記:林暐翰 講義作者:吳永志</h1>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+<!-- /TOC -->
+
+<h1 name="CH01">    CH01:Web Application 概觀與開發環境準</h1>
+
+<h1>CH02:撰寫與佈署HTTP Servlets</h1>
+<h1>CH03:Servlet的生命週期</h1>
+<h2 name="P48"> P48 Init Parameter(初始參數)</h2>
+
+<ul>
+<li>Init Parameter(初始參數) - 設定:web.xml檔案設定如下<code>xml&lt;servlet&gt;   &lt;servlet-name&gt;InitCounter&lt;/servlet-name&gt;    &lt;servlet-class&gt;servlet_examples.InitCounter&lt;/servlet-class&gt; &lt;init-param&gt;        &lt;param-name&gt;initial&lt;/param-name&gt;        &lt;param-value&gt;1000&lt;/param-value&gt; &lt;/init-param&gt;&lt;/servlet&gt;&lt;servlet-mapping&gt;    &lt;servlet-name&gt;InitCounter&lt;/servlet-name&gt;    &lt;url-pattern&gt;/InitCounter&lt;/url-pattern&gt;&lt;/servlet-mapping&gt;</code>- 程式:在Servlet的init() method內以String initial_Value = getInitParamet</li>
+</ul>
+<h1>CH04:擷取資訊(HttpServletRequest,ServletConfig,ServerletContext介面)</h1>
+<h2>P62 取得Servlet自身的資訊(一)s</h2>
+<ul>
+<li><strong>取得Servlet初始參數</strong><ul>
+<li><code>String getInitParameter(String name)</code> 取得Servlet初始參數的「值」</li>
+<li><code>Enumeration getInitParameterNames()</code> 列舉Servlet初始參數的「參數」</li>
+<li>註:<font color=red>需配合web.xml;</font>(參見p48及下一頁程式片段)</li>
+</ul>
+</li>
+<li><strong>取得Servlet名稱,環境(Context)</strong><ul>
+<li><code>String getServletName()</code> 取得「Servlet名稱」(Servlet Content)</li>
+</ul>
+</li>
+<li><strong>說明:以上均屬ServletConfig介面(由GenericServlet類別實作)之method</strong>，故程式內直接使用。</li>
+</ul>
+<h2>P63 取得Servlet自身的資訊(二)</h2>
+<ul>
+<li><strong>程式片段(取得web.xml所提供的所有初始參數名稱、值)</strong>
+  <code>`</code>java=
+  java.util.Enumeration enum = getInitParameterNames();
+  while(enum.hasMoreElements){
+    String name = (String)enum.nextElement();
+    out.println(name+":"+getInitParameter(name));
+  }
+  <code>`</code></li>
+</ul>
+<h2>取得Client的資訊(十三)</h2>
+<ul>
+<li>Request介面之屬性(Attribute method)<ul>
+<li>void req.setAttribute</li>
+</ul>
+</li>
+</ul>
+<h1>CH05:傳送HTML資訊(HttpServletResponse介面)</h1>
+<h2>P88 基本概念</h2>
+<ul>
+<li>「Response Content(回應內容)」是回應客戶端時的主要內容<ul>
+<li>對HTML網頁而言，Response Content就是HTML本身文字檔</li>
+<li>對圖像來說，Response Content則是構成其影像的位元組(byte)</li>
+</ul>
+</li>
+<li>以最低階的觀點來看，Web伺服器其實是將「整個回應」當成一連串的位元組(byte)傳給客戶端而以，所以HTTP協定規定伺服器必須:<ul>
+<li><strong>先</strong>送出「Status Line」和「Response Header(回應標頭)」之設定</li>
+<li><strong>後</strong>才能送出「Response Content(回應內容)」</li>
+<li>以便客戶端流覽器能先解讀回應時的「Status Line」與「Response Header(回應標頭)」之設定，才能建構出「該串後到的位元組(byte)」</li>
+</ul>
+</li>
+</ul>
+<h2>資料型態&amp;輸出資料流(一)</h2>
+<ul>
+<li>資料型態設定<ul>
+<li><strong>目的</strong>:送出「Response Content(回應內容)」之前，需先設定期內容型態</li>
+<li><strong>實作方法:void res.setContentType(String type)</strong>
+    設定Response(回應)的內容型態<ul>
+<li>例1:
+    <code>java
+    res.setContentType("text/html")
+    res.setContentType("text/html;charset=ISO-8859-1");
+    res.setContentType("text/html;charset=UTF-8");
+    res.setContentType("text/html;charset=Big5");
+    res.setContentType("text/html;charset=Shift_JIS");</code></li>
+<li>例2:
+    res.setContentType("image/gif");...</li>
+</ul>
+</li>
+<li>說明:<ul>
+<li>可同時指定進行字元編碼(character encoding)時所採用的<strong>字碼集(charset)</strong></li>
+<li>以上res指ServletResponse型別物件</li>
+<li>在HTTP Servlet，此方法會設定「Response Header(回應標頭)」中Content-Type標頭(header)
+  ## 資料型態&amp;輸出資料流(二)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>文字資料(characte text)輸出<ul>
+<li>例
+    <code>`</code>java
+        res.setContentType("text/html;charset=UTF-8")
+        PrintWriter out = res.getWriter();
+    <code>`</code></li>
+<li><strong>註:</strong>會先將收到的Unicoide字元轉換成所指定的字碼集(charset)的對應字元，然後才寫入Response(回應)</li>
+</ul>
+</li>
+<li>二位元資料(binary data)輸出<ul>
+<li>例:
+<code>`</code>java
+    res.setContentType("image/gif");
+    ServletOutputStream out = res.getOutputStream();
+<code>`</code></li>
+<li><strong>註:可進行任何的編碼程序!</strong></li>
+<li><strong>注意事項:</strong><ul>
+<li>以上兩個方法只能<strong>擇一使用</strong>，否則將產生執行時期的java.lang.<strong>IllegalStateException</strong>例外 <strong>&lt;--假如出現是結構問題(假如出現請找老師)</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>P91 持續性連線&amp;回應緩衝區(一)</h2>
+<ul>
+<li>持續型連線(persistent connection)<ul>
+<li>目的:讓客戶端能夠保持著使用同一個socket連線，以取得網頁的多個片段(譬如網頁內含多個圖檔)，稱之持續性連線(persistent connection) &lt;--(專有名詞)</li>
+<li>實作方法:
+    <code>`</code>java
+        void res.setContentLength(int len)//(見以下說明)(來設定緩衝區的大小)
+    <code>`</code><ul>
+<li>設定Response(回應)的內容長度</li>
+</ul>
+</li>
+<li>說明:<ul>
+<li>以上res指ServletResponse型別物件</li>
+<li>在HTTP Servlet，此方法會設定「Response Header(回應標頭)」中Content-Length標頭 (header)</li>
+<li>在HTTP Servlet 可利用此方法來保持<strong>持續性聯現(persistent connection，有時稱之keep-alive connection)</strong>&lt;--(保持同一個通道)</li>
+<li>程式設計師冰部一定要自己計算內容長度，如果回應內容的長度在指定的<strong>回應緩衝區(Response buffer)</strong>容量之內，伺服器<strong>通常</strong>幫你設定內容長度</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>P92 持續性連線&amp;回應緩衝區(二) (必考頁數)</h2>
+<ul>
+<li>回應緩衝區(Response buffer)</li>
+<li><strong>void res.setBufferSize(int size) &lt;-(必考題)8K大小</strong>
+        Sets the preferred buffer size for the body of the response.
+        - <font color=red><strong>目的:提高緩衝區大小，提高效能
+        原因:減少Socket的切換</strong>
+        </font>
+        - <strong>P.S</strong>
+            - 通常人的耐性只有3.6秒，登入耐性只有0秒。
+            - 撥接時代慢慢跑照片的情況，就是8K的緩衝區<ul>
+<li><strong>int res.getBufferSize()</strong>
+    Returns the actual buffer size used for the response.</li>
+<li><strong>boolean res.isCommitted()</strong>
+    Return boolean indicating if the response has been committed.</li>
+<li><strong>void res.flushBuffer() throws java.io.IOException</strong>
+    Forces any content in the buffer to written to the client.</li>
+<li>註:<ul>
+<li>以上res指ServletResponse型別物件</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>範例:
+<a href="https://github.com/shps951023/SL314/blob/8b45fb60311b14527892dc3a5536e311f38a9d2e/src/servlet_examples/KeepAlive.java">KeepAlive.java</a>
+<a href="https://github.com/shps951023/SL314/blob/8b45fb60311b14527892dc3a5536e311f38a9d2e/src/servlet_examples/Buffering.java">Buffering.java</a></p>
+<h2>P93 狀態碼設定(一)</h2>
+<ul>
+<li>狀態碼(Status Code)<ul>
+<li><b>目的:</b> 藉由狀態碼(Status Code)的使用，Servlet將可作更多的事情，例如，它可以<strong>重導</strong>(redirect)一個request，或是<strong>回報錯誤</strong>
+所有的狀態碼見:<a href="https://i.imgur.com/EF3Fyff.png">附錄五</a></li>
+<li><strong>1xx:</strong></li>
+</ul>
+</li>
+</ul>
+<p><code>`</code>
+PS.
+<code>`</code></p>
+<h2>P94 狀態碼設定(二)</h2>
+<ul>
+<li>設定狀態碼(Status Code)<ul>
+<li><strong>void res.setStatus(int sc)</strong><ul>
+<li>設定HTTP狀態碼(Status Code)</li>
+<li>可用一般數值，或<strong>HttpServletResponse接面所定義的SC_XXX常數來表示</strong>；需於送出(Response)回應主體之前使用。</li>
+<li>void</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>PS:
+<code>`</code>
+可以配合P101
+    錯誤處理 : setSatus code + web.xml</p>
+<p><code>`</code></p>
+<h2>P95</h2>
+<h2>P96</h2>
+<ul>
+<li>++<strong>回應標頭(Response Header)設定(續)</strong>++</li>
+</ul>
+<p><strong>PS</strong>
+<code>`</code>
+中文亂碼有三次:
+JSP一出來就有五隻手了(亂碼問題)。</p>
+<p><code>`</code></p>
+<h2>P97 應用1 - 重導請求</h2>
+<ul>
+<li>重導請求()<ul>
+<li><strong>目的:</strong>將客戶端之請求，重導(Redirect)至指定的地點</li>
+</ul>
+</li>
+</ul>
+<p><strong>PS:</strong>
+<code>`</code>
+哪三個第方不一樣
+1.
+2.</p>
+<ul>
+<li>Context 跟 Map的技術</li>
+</ul>
+<p>P150 當http前面加上/ 會是全部路徑壓上去</p>
+<ul>
+<li>斜線(/)分為:
+    html
+    CSS
+    AJS
+    jQuery
+    Xml
+  ::: warning
+    有一堆斜線(/)
+  :::</li>
+</ul>
+<p><code>`</code></p>
+<h2>P98 應用2-客戶端提取</h2>
+<ul>
+<li>客戶端提取(Client Pull)<ul>
+<li>目的:客戶端父則提取(pull)下一網頁</li>
+<li>模式說明:客戶端提取(Client PUll)，</li>
+<li>實作方法:<ul>
+<li>res.setHeader</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>範例:
+<b>
+<a href="https://" title>SiteSelector</a>
+<a href="https://" title>ClientPull</a>
+<a href="https://" title>ClientPullMove</a>
+</b></p>
+<h2>P99 not to cache the response</h2>
+<ul>
+<li>Tell the browser not to caher the response</li>
+<li><font color=blue><strong>目的:</strong></font><strong>避免瀏覽器對文件的快取(cache)</strong></li>
+<li><font color=blue><strong>實作方法:</strong></font>搭配使用以下3種方法以避免瀏覽器對文件的快取<ul>
+<li><font color=red><b>res.getHeader("Cache-Control","no-store");</b></font> //HTTP 1.1<ul>
+<li>如果將預設為no-store，表示此文件不應該被快取，也不可以儲存在proxy伺服器當中</li>
+<li>如果將預設為no-caache，(則只)表示此文件不應該被快取</li>
+</ul>
+</li>
+<li><font color=red><b>res.setHeader("Pragma","no-cache");</b></font> //HTTP 1.0<ul>
+<li>唯一的合法值為 <strong>no-cache</strong>,表示此文件不應該被快取。</li>
+</ul>
+</li>
+<li><font color=red><b>res.setDateHeader("Expires",0);</b></font><ul>
+<li>指文件資訊失效的時間</li>
+<li>如果將預設為0時，指該文件立即失效。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>PS.
+<code>`</code></p>
+<ul>
+<li>proxy伺服器(代理伺服器)<ul>
+<li>網路概論</li>
+<li>目的:<ul>
+<li>節省網路流量
+  <code>`</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>P100 錯誤處理(一)</h2>
+<ul>
+<li>錯誤處理<ul>
+<li><font color=blue><b>目的:</b></font>處理客戶端的錯誤(4xx)；伺服器端的錯誤(5xx，含javax.servlet.ServletException例外處理)</li>
+<li>
+<h2><strong>++實作方法1/3:++</strong>例用狀態碼(Status Code)之設定，進行錯誤處理。</h2>
+</li>
+</ul>
+</li>
+</ul>
+<h2>P101 錯誤處理(二)</h2>
+<ul>
+<li>錯誤處理(續)<ul>
+<li><strong>實作方法2/3:</strong> 例用狀態碼(Status Code)之設定 + web.xml檔案
+例如:
+  <code>`</code>xml
+  <web-app>
+  <location>/error400.html</location> <!--/代表IBM資料夾-->
+  </web-app>
+  <code>`</code></li>
+</ul>
+</li>
+</ul>
+<h2>P102 錯誤處理(三)</h2>
+<ul>
+<li>錯誤處理(續):
+    <code>`</code>xml
+        &lt;%@ page errorPage="error.jsp"%&gt; <!--error.jsp預設是none-->
+        &lt;%@ page isErrorPage="true"%&gt;<!--isErrorPage預設是false-->
+    <code>`</code>
+  <code>`</code></li>
+<li>好記:當我呼叫你實，你要說是的，我是xxx</li>
+<li>專案不會用到，是給小型專案使用。</li>
+<li>除非isErrorPage有註冊
+  <code>`</code></li>
+</ul>
+<h2>P103 應用4-錯誤處理(四)</h2>
+<ul>
+<li>補充1:<strong>例外(exception)及</strong>javax.servlet.<strong>ServletException之攔截</strong><ul>
+<li>指有繼承自java.lang.<strong>RuntimeException</strong>;java.io.<strong>IOException</strong>;javax.servlet.<strong>ServletException</strong>之例外，才可以放手交由伺服器處理。</li>
+<li>其他類型的例外(exception)，必須由Servlet自己攔截，以下3,4個ServletException建構元可以包裝任何類型的exception，讓伺服器有辦法之道引法ServletException的"問題根源"</li>
+<li>public ServletException()</li>
+<li>public ServletException(String message)</li>
+<li>public ServletException(Throwable rootCause)</li>
+<li>public ServletException(Tring message,Throwable rootCause)</li>
+</ul>
+</li>
+</ul>
+<p><code>`</code></p>
+<ul>
+<li>Throwable 含error在裡面了</li>
+<li>throws是呼叫此方法的程式</li>
+<li>木馬出城舉例</li>
+<li>500錯誤 NullPointerException 繼承 RunnableException</li>
+</ul>
+<p><code>`</code></p>
+<h2>P104 錯誤處理(五)</h2>
+<ul>
+<li>
+<p>補充1:例外(exception)及<strong>javax.servlet.ServletException之攔截</strong></p>
+<ul>
+<li>伺服端的錯誤，可由攔截(catch)<strong>javax.servlet.ServletException</strong>後將之丟出 <strong>(throw):</strong>
+(1:)交由伺服器處理，或 <strong>&lt;--500堆疊意思</strong>
+(2:)交給web.xml檔所指定的程式處理，web.xml如下所示:
+<code>xml
+&lt;web-app&gt;
+    &lt;error-page&gt;
+        &lt;exception-type&gt;javax.servlet.ServletException&lt;/exception-type&gt;
+        &lt;location&gt;/ErrorDisplay&lt;/location&gt;
+        &lt;!--
+            1.這是一個動態的Servlet程式
+            2.can do anything
+        --&gt;         
+    &lt;/error-page&gt;
+&lt;/web-app&gt;</code></li>
+</ul>
+<p><code>一個高級的程式語言，要進行高級的錯誤處理。
+        如果某些時候要作錯誤時候加工，請看ErrorDisplay.java範例。
+    假如錯誤是500 沒關係 可以當場Debug</code></p>
+</li>
+</ul>
+<h2>P106</h2>
+<h2></h2>
+<h2>P162 Directive Elements(1/2)</h2>
+<ul>
+<li>Directive Elements主要用來提供整個網頁的說明<ul>
+<li><code>&lt;%@ ... %&gt;</code>型式出現也分三類<ul>
+<li>1 <code>&lt;%@ ... %&gt;</code></li>
+<li>2</li>
+<li>3</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>PS:
+<code>`</code>
+charset是下指令給瀏覽器
+pageEncoding是下指令給伺服器
+    假如不一樣會造成通知錯誤，會讓Tomcat誤以為</p>
+<ul>
+<li>要先pageEncoding正確編碼，在確定charset</li>
+<li>結論:只要pageEncoding正確就好</li>
+<li>如果 pageEncoding 省略，會拿charset來用</li>
+<li>Eclipse會自動幫你轉碼(Ex.pageEncoding="UTF-8"，會自動幫你轉成UTF-8)，只有在uE環境才可以</li>
+<li>charset會改變(檢視-&gt;編碼)的對應。<ul>
+<li>從Eclipse (export-&gt;file)，會轉出對應pageEncoding的編碼。</li>
+<li>強烈建議:假如從Eclipse導出到UE不要亂動編碼。</li>
+<li>要轉碼請使用Big5 -&gt;ASII
+不要使用Big5-&gt;Unicode(因為有Utf-16
+)</li>
+<li>小結論: 如果希望任何編輯器都沒有編碼錯誤，請使用pageEncoding=Big5</li>
+</ul>
+</li>
+<li>UTF-8 有(檔首有無BOM)，微軟的問題。
+  記事本會自動生出來</li>
+</ul>
+<p><code>`</code></p>
+<h3>網頁亂碼的問題</h3>
+<ul>
+<li>編碼的手有哪幾隻?<ul>
+<li>1.瀏覽器</li>
+<li>2.程式 (Servlet)<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 --></li>
+<li>3.編輯器</li>
+<li>4.伺服器</li>
+<li>5.WorkSpace (Eclipse)<ul>
+<li>(windows-&gt;Preference-&gt;WorkSpace-&gt;Text file encoding)</li>
+<li>為甚麼要改?<ul>
+<li>因為作業系統用Mac的時候</li>
+</ul>
+</li>
+<li>注意:<ul>
+<li>團隊開發要統一</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>6.雲端</li>
+</ul>
+</li>
+</ul>
+<p>:warning: <font color=Red><b>總結:一個環節錯了，就會全錯。</b></font></p>
+<h1>CH06 Sessiion</h1>
+<h2>P107 Sessiion Tracking</h2>
+<p><strong>重點:維持狀態</strong></p>
+<ul>
+<li>1 Seesion Tracking(進程追蹤) - 基本概念<ul>
+<li>類似會話<ul>
+<li>但是都不要用</li>
+</ul>
+</li>
+<li>結論:<strong>使用Session Tracking就好</strong></li>
+</ul>
+</li>
+<li>2 隱藏欄位(Hidden Form Field)</li>
+<li>3 URL重寫</li>
+<li>4 Cookie</li>
+<li>5 <strong>使用Session Tracking API</strong> (重點)</li>
+</ul>
+<p><code>`</code>
+    2,3,4都有安全上的漏洞
+<code>`</code></p>
+<h2>P108 基本概念</h2>
+<ul>
+<li>
+<p>追蹤使用者</p>
+<ul>
+<li>一個使用者在<strong>連續聯結多個頁面</strong>時，<strong>【購物車】使用記憶體</strong></li>
+<li><strong>【個人化服務案例】使用資料庫</strong>
+<code>記憶體
+    資料庫</code></li>
+</ul>
+</li>
+<li>
+<p><strong>HTTP 屬於Stateless的通協定</strong>，伺服器無法記住使用者，它只關心Request和Response，<strong><em>一旦回應結束，伺服器與瀏覽器之間的連線便會結束。</em></strong>
+    ``
+        第一個缺點
+            Socket的問題
+            會延伸一個專有名詞
+                解決Socket問題，放在緩衝區。
+        第二個缺點</p>
+<p>``</p>
+</li>
+</ul>
+<h2>P109 基本概念</h2>
+<ul>
+<li>
+<p>目的:</p>
+<ul>
+<li>讓Web伺服器能夠追蹤使用者的狀態(state)稱之<strong>Sesstion Tracking</strong>，可使前一個請求所傳送的資料</li>
+</ul>
+</li>
+<li>
+<p>註:</p>
+<ul>
+<li>1.前三種是傳統方法，各有其缺點，最後一種是目前最常用，最有效的解決方案。 //有安全上的漏洞</li>
+<li>2.曾經提過HTTP身分驗證機制//P71~P72
+<code>O登入例子:(authntication)
+        直覺會追蹤，但實際上沒有追蹤</code></li>
+</ul>
+</li>
+</ul>
+<h2>P110 隱藏欄位(Hidden Form Field)</h2>
+<ul>
+<li>說明:<strong>使用HTML內現有的Hidden屬性</strong></li>
+<li>實作方式:<ul>
+<li>前一網頁:
+<code>`</code>xml
+    <form action="下一網頁">
+    </form>
+<code>`</code></li>
+</ul>
+</li>
+<li>優點:<ul>
+<li>主要的瀏覽器皆支持隱藏欄位;瀏覽器不顯示其值；不需</li>
+</ul>
+</li>
+<li>
+<p>缺點:</p>
+<ul>
+<li>1.只能一連串動態產生Form表單</li>
+<li>2.檢視原始碼，能可看見其值，按全上有漏洞   <br>
+<code>不要以為Form表單是垃圾
+    OHidden
+        不要放機密資料
+        傳一般資料，效能比較好</code></li>
+</ul>
+<p><a href="/SL314/images/Image 018.png"></a></p>
+</li>
+</ul>
+<h2>P111 URL重寫</h2>
+<p>-實作方式
+    - http://server:port/servlet/Rewritten<strong>/12345</strong>
+        - <strong>額外路徑資訊</strong>
+    - http://server:port/servlet/Rewritten/<strong>?sessionId = 12345</strong>
+        - <strong>查詢字串</strong></p>
+<ul>
+<li>優點<ul>
+<li>瀏覽器、伺服器皆支援；</li>
+</ul>
+</li>
+<li>缺點<ul>
+<li>資料曝路在瀏覽器上，安全上漏洞。</li>
+<li>是記使用時困難重重，又難又煩，很少使用</li>
+</ul>
+</li>
+</ul>
+<h2>P112 Cookie(一)</h2>
+<ul>
+<li>說明: Cookie是一個小小文字檔，以key,value的方式將Seesion Tracking的內容記錄其中，而這個文字檔通常存在你的瀏覽器暫存區或硬碟內，也是一個常用的Session Tracking</li>
+<li>實作方式:<ul>
+<li><strong>它們都是暫時性的</strong></li>
+</ul>
+</li>
+<li>優點:<ul>
+<li>優雅有效率</li>
+</ul>
+</li>
+<li>缺點<ul>
+<li><strong>用戶端瀏覽器可能關閉cookie的設定</strong></li>
+<li>限制L最大長度4KB (每家瀏覽器額度都有彈性調整額度) --&gt;(P.S Session 沒有限制)</li>
+</ul>
+</li>
+</ul>
+<h2>P113 Cookie(二)</h2>
+<ul>
+<li><strong>Cookie(寫出Cookie，取回Cookie)</strong><ul>
+<li><strong>寫到用戶端瀏覽器上</strong>
+<code>`</code>xml
+    &lt;%
+        response.addCookie(myCookie);//CH05
+    %&gt;
+<code>`</code></li>
+<li><strong>取回Cookie</strong>
+<code>`</code>xml
+&lt;%
+Cookie[] cookieList = request.getCookies();//CH04
+%&gt;
+<code>`</code></li>
+</ul>
+</li>
+</ul>
+<h2>P116 HttpSession介面(二)</h2>
+<ul>
+<li>伺服器實作Session Tracking的原理:<ul>
+<li>String ID = <font color=red><b>session</b></font>.getId();</li>
+</ul>
+</li>
+</ul>
+<p><code>`</code></p>
+<div class="codehilite"><pre>出現RunetimeException通常都是自己粗心的問題
+    媽媽的例子
+
+Runetime
+</pre></div>
+
+
+<ul>
+<li>讀檔案時要讀取IOException</li>
+<li>資料庫會有 SQLException</li>
+<li>但是IllgalException是RuntimeException 運行時錯誤，可捕捉，可不捕捉
+    IllegalStateException因為Tomcat緩衝區是彈性的。</li>
+</ul>
+<p>資料庫連結P140
+SL314-DBGifReader</p>
+<p>不可擇一使用。</p>
+<p>可以一對多，
+甚麼通通解決
+不會有"後者蓋前者問題"</p>
+<p>Q 請求參數
+Src是</p>
+<p>Q HTML</p>
+<p>Q.甚麼是DB
+DBGifReader?</p>
+<p>Q.為甚麼是文字輸出"text/html"
+裡面會有文字輸出</p>
+<h1>圖片放在資料庫</h1>
+<p>當我從資料庫查出庫自時
+用PrintWriter語法</p>
+<p>圖片出來時 要用
+ServletOutputStream</p>
+<p>BufferReaderIN
+Reader</p>
+<p>必考:P90
+PrintWriter
+getOutputStream
+差別
+前者會幫你你進行編碼(轉charset)</p>
+<p>文字出口會先將收到的字元轉換成對應字元</p>
+<p>而二位元 不進行</p>
+<p>黑箱-&gt;Header-&gt;Content</p>
+<p>P97十顆星方法 sendRedirect</p>
+<p>setHeader 只有這個標頭嗎?
+p223有一群標頭 跟它是同一個位階
+<code>`</code></p>
+<h1>PS</h1>
+<p>req.getSession()
+裡面有藏boolean</p>
+<h1>照片補充:</h1>
+<p><img alt="" src="https://i.imgur.com/TWeY8n3.jpg"></p>
+<ul>
+<li>Error是廣島原子彈，<ul>
+<li>AssertionError可以哀一聲在死(java 1.4)才有</li>
+<li>...Error 安靜的死去</li>
+</ul>
+</li>
+<li>Exception<ul>
+<li>....Exception</li>
+<li>SQLException</li>
+<li>IOException</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="https://i.imgur.com/lUdmLWl.jpg">
+<img alt="" src="https://i.imgur.com/nIC67GK.jpg">
+<img alt="" src="https://i.imgur.com/BJd4YZH.jpg">
+<img alt="" src="https://i.imgur.com/9kpYpyJ.jpg">
+<img alt="" src="https://i.imgur.com/pIzdJQl.jpg">
+<img alt="" src="https://i.imgur.com/QYyrfVk.jpg">
+<img alt="" src="https://i.imgur.com/kGcHN6O.jpg">
+<img alt="" src="https://i.imgur.com/4p37qC2.jpg">
+<img alt="" src="https://i.imgur.com/mAczc9a.jpg">
+<img alt="" src="https://i.imgur.com/ULKzZuH.jpg"></p>
+<p>1210功課
+<img alt="" src="https://i.imgur.com/zH1H9YZ.png"></p>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
