@@ -1,4 +1,4 @@
-Á¿¸q:JAVAµ{¦¡»y¨¥(Java Web Application) µ§°O:ªLİÂ¿« Á¿¸q§@ªÌ:§d¥Ã§Ó
+Á¿¸q:JAVAµ{¦¡»y¨¥(Java Web Application) µ§°O:ªLİÂ¿« Á¿¸q§@Í:§d¥Ã§Ó
 ===
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
@@ -42,7 +42,7 @@
 ```
 - µ{¦¡:¦bServletªºinit() method¤º¥H
 String initial_Value = getInitParamet
-
+s
 ---
 
 # CH04:Â^¨ú¸ê°T(HttpServletRequest,ServletConfig,ServerletContext¤¶­±)
@@ -398,7 +398,7 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 	- ­nÂà½X½Ğ¨Ï¥ÎBig5 ->ASII
 	¤£­n¨Ï¥ÎBig5->Unicode(¦]¬°¦³Utf-16
 	)
-	- ¤pµ²½×: ¦pªG§Æ±æ¥ô¦ó½s¿è¾¹³£¨S¦³½s½X¿ù»~¡A½Ğ¨Ï¥ÎpageEncoding=Big5
+	- ¤pµ²½×: ¦pªG§Æ±æ¥ô¦ó½s¿è¾¹m¨S¦³½s½X¿ù»~¡A½Ğ¨Ï¥ÎpageEncoding=Big5
 
 - UTF-8 ¦³(ÀÉ­º¦³µLBOM)¡A·L³nªº°İÃD¡C
 °O¨Æ¥»·|¦Û°Ê¥Í¥X¨Ó
@@ -431,7 +431,7 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 **­«ÂI:ºû«ùª¬ºA**
 - 1 Seesion Tracking(¶iµ{°lÂÜ) - °ò¥»·§©À 
 	- Ãş¦ü·|¸Ü 
-		- ¦ı¬O³£¤£­n¥Î
+		- ¦ı¬Om¤£­n¥Î
 	- µ²½×:**¨Ï¥ÎSession Tracking´N¦n**
 - 2 ÁôÂÃÄæ¦ì(Hidden Form Field)
 - 3 URL­«¼g
@@ -439,22 +439,22 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 - 5 **¨Ï¥ÎSession Tracking API** (­«ÂI)
 
 ```
-	2,3,4³£¦³¦w¥ş¤Wªºº|¬}
+	2,3,4m¦³¦w¥ş¤Wªºº|¬}
 ```
  
 ---
 
 ## P108 °ò¥»·§©À
 
-- °lÂÜ¨Ï¥ÎªÌ
-	-  ¤@­Ó¨Ï¥ÎªÌ¦b**³sÄòÁpµ²¦h­Ó­¶­±**®É¡A**¡iÁÊª«¨®¡j¨Ï¥Î°O¾ĞÅé**
+- °lÂÜ¨Ï¥ÎÍ
+	-  ¤@­Ó¨Ï¥ÎÍ¦b**³sÄòÁpµ²¦h­Ó­¶­±**®É¡A**¡iÁÊª«¨®¡j¨Ï¥Î°O¾ĞÅé**
 	- **¡i­Ó¤H¤ÆªA°È®×¨Ò¡j¨Ï¥Î¸ê®Æ®w**
 	
 	```
 		°O¾ĞÅé
 		¸ê®Æ®w
 	```
-- **HTTP Äİ©óStatelessªº³q¨ó©w**¡A¦øªA¾¹µLªk°O¦í¨Ï¥ÎªÌ¡A¥¦¥uÃö¤ßRequest©MResponse¡A_**¤@¥¹¦^À³µ²§ô¡A¦øªA¾¹»PÂsÄı¾¹¤§¶¡ªº³s½u«K·|µ²§ô¡C**_
+- **HTTP Äİ©óStatelessªº³q¨ó©w**¡A¦øªA¾¹µLªk°O¦í¨Ï¥ÎÍ¡A¥¦¥uÃö¤ßRequest©MResponse¡A_**¤@¥¹¦^À³µ²§ô¡A¦øªA¾¹»PÂsÄı¾¹¤§¶¡ªº³s½u«K·|µ²§ô¡C**_
 
 	``
 		²Ä¤@­Ó¯ÊÂI
@@ -470,7 +470,7 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 ## P109 °ò¥»·§©À
 
 - ¥Øªº:
-	- ÅıWeb¦øªA¾¹¯à°÷°lÂÜ¨Ï¥ÎªÌªºª¬ºA(state)ºÙ¤§**Sesstion Tracking**¡A¥i¨Ï«e¤@­Ó½Ğ¨D©Ò¶Ç°eªº¸ê®Æ
+	- ÅıWeb¦øªA¾¹¯à°÷°lÂÜ¨Ï¥ÎÍªºª¬ºA(state)ºÙ¤§**Sesstion Tracking**¡A¥i¨Ï«e¤@­Ó½Ğ¨D©Ò¶Ç°eªº¸ê®Æ
 	
 	
 - µù:
@@ -532,12 +532,12 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 
 - »¡©ú: Cookie¬O¤@­Ó¤p¤p¤å¦rÀÉ¡A¥Hkey,valueªº¤è¦¡±NSeesion Trackingªº¤º®e°O¿ı¨ä¤¤¡A¦Ó³o­Ó¤å¦rÀÉ³q±`¦s¦b§AªºÂsÄı¾¹¼È¦s°Ï©ÎµwºĞ¤º¡A¤]¬O¤@­Ó±`¥ÎªºSession Tracking
 - ¹ê§@¤è¦¡:
-	- **¥¦­Ì³£¬O¼È®É©Êªº**
+	- **¥¦­Ìm¬O¼È®É©Êªº**
 - ÀuÂI:
 	- Àu¶®¦³®Ä²v
 - ¯ÊÂI
 	- **¥Î¤áºİÂsÄı¾¹¥i¯àÃö³¬cookieªº³]©w**	
-	- ­­¨îL³Ì¤jªø«×4KB (¨C®aÂsÄı¾¹ÃB«×³£¦³¼u©Ê½Õ¾ãÃB«×) -->(P.S Session ¨S¦³­­¨î)
+	- ­­¨îL³Ì¤jªø«×4KB (¨C®aÂsÄı¾¹ÃB«×m¦³¼u©Ê½Õ¾ãÃB«×) -->(P.S Session ¨S¦³­­¨î)
 
 
 ---
@@ -618,7 +618,7 @@ pageEncoding¬O¤U«ü¥Oµ¹¦øªA¾¹
 ```
 
 ---
-	¥X²{RunetimeException³q±`³£¬O¦Û¤v²Ê¤ßªº°İÃD
+	¥X²{RunetimeException³q±`m¬O¦Û¤v²Ê¤ßªº°İÃD
 		¶ı¶ıªº¨Ò¤l
 
 	Runetime
@@ -643,7 +643,7 @@ SL314-DBGifReader
 ---
 ¥i¥H¤@¹ï¦h¡A
 ¬Æ»ò³q³q¸Ñ¨M
-¤£·|¦³"«áªÌ»\«eªÌ°İÃD"
+¤£·|¦³"«áÍ»\«eÍ°İÃD"
 
 Q ½Ğ¨D°Ñ¼Æ
 Src¬O
@@ -676,7 +676,7 @@ Reader
 PrintWriter
 getOutputStream
 ®t§O
-«eªÌ·|À°§A§A¶i¦æ½s½X(Âàcharset)
+«eÍ·|À°§A§A¶i¦æ½s½X(Âàcharset)
 
 
 
@@ -709,7 +709,7 @@ req.getSession()
 ![](https://i.imgur.com/TWeY8n3.jpg)
 - Error¬O¼s®q­ì¤l¼u¡A
 	- AssertionError¥i¥H«s¤@Án¦b¦º(java 1.4)¤~¦³
-	- ...Error ¦wÀRªº¦º¥h
+	- ...Error ¦wÜªº¦º¥h
 - Exception
 	- ....Exception
 	- SQLException

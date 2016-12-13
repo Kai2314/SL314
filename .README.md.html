@@ -674,7 +674,7 @@ function setDocumentScrollTop(ypos)
 <hr /> 
 <h1> <a id="ch04thttpservletrequestservletconfigserverletcontext" class="anchor" href="#ch04thttpservletrequestservletconfigserverletcontext" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CH04:�^����T(HttpServletRequest,ServletConfig,ServerletContext����)</h1> 
 <hr /> 
-<h2> <a id="p62-oservletۨt" class="anchor" href="#p62-oservlet%DB%A8t" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>P62 ���oServlet�ۨ�����T(�@)</h2> 
+<h2> <a id="p62-oservletۨts" class="anchor" href="#p62-oservlet%DB%A8ts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>P62 ���oServlet�ۨ�����T(�@)s</h2> 
 <ul> 
  <li> <strong>���oServlet��l�Ѽ�</strong> 
   <ul> 
@@ -1120,6 +1120,67 @@ pageEncoding�O�U���O�����A��
         ���n����K���
         �Ǥ@���ơA�į����n
 </code></pre> <p><a href="/SL314/images/Image%20018.png"></a></p> </li> 
+</ul> 
+<hr /> 
+<h2> <a id="p111-urlg" class="anchor" href="#p111-urlg" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>P111 URL���g</h2> 
+<p>-��@�覡 - http://server:port/servlet/Rewritten<strong>/12345</strong> - <strong>�B�~���|��T</strong> - http://server:port/servlet/Rewritten/<strong>?sessionId = 12345</strong> - <strong>�d�ߦr��</strong></p> 
+<ul> 
+ <li>�u�I 
+  <ul> 
+   <li>�s�����B���A���Ҥ䴩�F</li> 
+  </ul> </li> 
+ <li>���I 
+  <ul> 
+   <li>����n���b�s�����W�A�w���W�|�}�C</li> 
+   <li>�O�O�ϥήɧx�������A�S���S�СA�ܤ֨ϥ�</li> 
+  </ul> </li> 
+</ul> 
+<hr /> 
+<h2> <a id="p112-cookie" class="anchor" href="#p112-cookie" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>P112 Cookie(�@)</h2> 
+<ul> 
+ <li>����: Cookie�O�@�Ӥp�p��r�ɡA�Hkey,value���覡�NSeesion Tracking�����e�O���䤤�A�ӳo�Ӥ�r�ɳq�<code>�s�b�A���s�����Ȧs�ϩεw�Ф��A�]�O�@�ӱ</code>�Ϊ�Session Tracking</li> 
+ <li>��@�覡: 
+  <ul> 
+   <li><strong>���̳��O�Ȯɩʪ�</strong></li> 
+  </ul> </li> 
+ <li>�u�I: 
+  <ul> 
+   <li>�u�����Ĳv</li> 
+  </ul> </li> 
+ <li>���I 
+  <ul> 
+   <li> <strong>�Τ���s�����i������cookie���]�w</strong> </li> 
+   <li>����L�̤j����4KB (�C�a�s�����B�׳����u�ʽվ��B��) --&gt;(P.S Session �S������)</li> 
+  </ul> </li> 
+</ul> 
+<hr /> 
+<h2> <a id="p113-cookieg" class="anchor" href="#p113-cookieg" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>P113 Cookie(�G)</h2> 
+<ul> 
+ <li> <strong>Cookie(�g�XCookie�A���^Cookie)</strong> 
+  <ul> 
+   <li><strong>�g��Τ���s�����W</strong></li> 
+  </ul> 
+  <div class="highlight highlight-text-xml">
+   <pre>    <span class="pl-s1"><span class="pl-pse">&lt;%</span></span>
+<span class="pl-s1">        response<span class="pl-k">.</span>addCookie(myCookie);<span class="pl-c">//CH05</span></span>
+<span class="pl-s1">    <span class="pl-pse">%&gt;</span></span></pre>
+  </div> 
+  <ul> 
+   <li><strong>���^Cookie</strong></li> 
+  </ul> 
+  <div class="highlight highlight-text-xml">
+   <pre><span class="pl-s1"><span class="pl-pse">&lt;%</span></span>
+<span class="pl-s1"><span class="pl-k">Cookie</span>[] cookieList <span class="pl-k">=</span> request<span class="pl-k">.</span>getCookies();<span class="pl-c">//CH04</span></span>
+<span class="pl-s1"><span class="pl-pse">%&gt;</span></span></pre>
+  </div> </li> 
+</ul> 
+<hr /> 
+<h2> <a id="p116-httpsessiong" class="anchor" href="#p116-httpsessiong" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>P116 HttpSession����(�G)</h2> 
+<ul> 
+ <li>���A����@Session Tracking����z: 
+  <ul> 
+   <li>String ID = <b>session</b>.getId();</li> 
+  </ul> </li> 
 </ul> 
 <pre><code>
 ---
