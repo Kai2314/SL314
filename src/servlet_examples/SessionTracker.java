@@ -31,6 +31,7 @@ public class SessionTracker extends HttpServlet {
 		session.setAttribute("tracker.count", count);
 		*/
 		
+		
 		ArrayList<String> arr = (ArrayList<String>) session.getAttribute("造訪過網頁");
 //		Integer count = (Integer) session.getAttribute("造訪網頁順序");
 		if(arr==null ){			
