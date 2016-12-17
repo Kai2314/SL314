@@ -22,7 +22,7 @@ public class HtmlSQLResult {
       if (stmt.execute(sql)) {
         // There's a ResultSet to be had
         ResultSet rs = stmt.getResultSet();
-        out.append("<TABLE>\n");
+        out.append("<TABLE border='4' background-color=red>\n");
 
         ResultSetMetaData rsmd = rs.getMetaData();
 

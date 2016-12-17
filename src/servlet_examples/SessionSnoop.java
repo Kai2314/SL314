@@ -12,7 +12,12 @@ public class SessionSnoop extends HttpServlet {
 		PrintWriter out = res.getWriter();
 
 		// Get the current session object, create one if necessary
-		HttpSession session = req.getSession();
+		HttpSession session = req.getSession();//創建session，因為是介面，裡面實作由server幫你，所以不用new
+		/*
+		 * 包含
+		 * 	new
+		 * 	return
+		 */
 
 		// Increment the hit count for this page. The value is saved
 		// in this client's session under the name "snoop.count".
@@ -47,7 +52,10 @@ public class SessionSnoop extends HttpServlet {
 		out.println("<I>(" + new Date(session.getCreationTime()) + ")</I><BR>");
 		out.println("Last access time: " + session.getLastAccessedTime());
 		out.println("<I>(" + new Date(session.getLastAccessedTime()) + ")</I><BR>");
-
+		/*
+		 * boolean isRequestedSessionIdFromCookie() Checks whether the requested
+		 * session ID came in as a cookie.
+		 */
 		out.println("Requested session ID from cookie: " + req.isRequestedSessionIdFromCookie() + "<BR>");
 		out.println("Requested session ID from URL: " + req.isRequestedSessionIdFromURL() + "<BR>");
 		out.println("Requested session ID valid: " + req.isRequestedSessionIdValid() + "<BR>");

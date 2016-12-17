@@ -18,7 +18,10 @@ public class SessionTracker extends HttpServlet {
 		PrintWriter out = res.getWriter();
 
 		// Get the current session object, create one if necessary
-		HttpSession session = req.getSession();
+		HttpSession session = null;
+		for(int i = 0 ;i<70000;i++){
+			session = req.getSession();
+		}
 
 		/*
 		// Increment the hit count for this page. The value is saved
@@ -34,22 +37,22 @@ public class SessionTracker extends HttpServlet {
 		
 		ArrayList<String> arr = (ArrayList<String>) session.getAttribute("造訪過網頁");
 //		Integer count = (Integer) session.getAttribute("造訪網頁順序");
-		if(arr==null ){			
-			arr = new ArrayList<>();
-			arr.add(url+arr.size());
-		}
-		else
-			arr.add(url+arr.size());
-		session.setAttribute("造訪過網頁",arr);
-
-		
-		for(String str : arr){
-			System.out.println(str);
-		}
-		System.out.println("=====================");
-		/*
+//		if(arr==null ){			
+//			arr = new ArrayList<>();
+//			arr.add(url+arr.size());
+//		}
+//		else
+//			arr.add(url+arr.size());
+//		session.setAttribute("造訪過網頁",arr);
+//
+//		
+//		for(String str : arr){
+//			System.out.println(str);
+//		}
+//		System.out.println("=====================");
 		out.println("<HTML><HEAD><TITLE>SessionTracker</TITLE></HEAD>");
 		out.println("<BODY><H1>Session Tracking Demo</H1>");
+		/*
 
 		// Display the hit count for this page
 		out.println("You've visited this page " + count + ((count.intValue() == 1) ? " time." : " times."));

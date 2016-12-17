@@ -1,9 +1,6 @@
 講義:JAVA程式語言(Java Web Application) 筆記:林暐翰 講義作者:吳永志
 ===
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-
-<!-- /TOC -->
+[TOC]
 
 ---
 
@@ -443,31 +440,26 @@ pageEncoding是下指令給伺服器
 ## P107 Sessiion Tracking
 
 **重點:維持狀態**
-- 1 Seesion Tracking(進程追蹤) - 基本概念 
-	- 類似會話 
-		- 但是都不要用
-	- 結論:**使用Session Tracking就好**
+- 1 Seesion Tracking(進程追蹤) - 基本概念
+	- 類似會話,但是都不要用
+	- 結論:**使用Session Tracking就好**	
 - 2 隱藏欄位(Hidden Form Field)
 - 3 URL重寫
 - 4 Cookie
 - 5 **使用Session Tracking API** (重點)
 
-```
+	```
 	2,3,4都有安全上的漏洞
-```
+	```
  
 ---
 
 ## P108 基本概念
 
 - 追蹤使用者
-	-  一個使用者在**連續聯結多個頁面**時，**【購物車】使用記憶體**
-	- **【個人化服務案例】使用資料庫**
+	-  一個使用者在**連續聯結多個頁面**時，聰明的網站必須擁有記住該使用者的能力，如:**【購物車】使用記憶體**
+	- 成功的網站，還必須在使用者光臨過後，記住其習性，供下次再度光臨時參考，如**【個人化服務案例】使用資料庫**
 	
-	```
-		記憶體
-		資料庫
-	```
 - **HTTP 屬於Stateless的通協定**，伺服器無法記住使用者，它只關心Request和Response，_**一旦回應結束，伺服器與瀏覽器之間的連線便會結束。**_
 
 	``
@@ -573,11 +565,71 @@ pageEncoding是下指令給伺服器
 	```
 
 ---
+## P115
+![](https://i.imgur.com/WWxtfCy.png)
+
+- **HttpSession介面目的**
+	- 伺服器利用配發一個HttpSession物件，讓Servlet可以用來儲存或取得
+
+- <b>PS</b>
+	- getSession()，()裡面如果沒有true會自動幫你加。
+	- **等號左邊是介面，不是方法。裡面沒方法，伺服器會自動幫你實作。**
+
+---
 
 ## P116 HttpSession介面(二)
 
+![](https://i.imgur.com/2MA7bRs.png)
 - 伺服器實作Session Tracking的原理:
 	- String ID = <font color=red><b>session</b></font>.getId();
+
+- <b>PS</b>
+	- cookie的id，[P120](#P120 HttpSession介面)
+
+
+
+---
+
+## P120 HttpSession介面=
+![](https://i.imgur.com/nHsDzTf.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

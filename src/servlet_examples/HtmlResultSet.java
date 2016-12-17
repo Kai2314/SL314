@@ -12,10 +12,10 @@ public class HtmlResultSet {
   public String toString() {  // can be called at most once
     StringBuffer out = new StringBuffer();
     // Start a table to display the result set
-    out.append("<TABLE>\n");
+    out.append("<TABLE border='2'>\n");
 
     try {
-      ResultSetMetaData rsmd = rs.getMetaData();
+      ResultSetMetaData rsmd = this.rs.getMetaData();
 
       int numcols = rsmd.getColumnCount();
 		
