@@ -4,13 +4,16 @@
 <%@page import="java.util.GregorianCalendar"%>
 <%@page import="java.util.Calendar"%>
 <%@page import="chat_room.MessageStorage"%>
-<%@ page contentType="text/html; charset=UTF-8" language="java"
-	errorPage=""%>
+<%@ page contentType="text/html; charset=Big5" pageEncoding="Big5"
+	language="java" errorPage=""%>
 <%
-	//ç²å–è¼¸å…¥å…§å®¹
-	String nameInput = request.getParameter("nameInput");
-	String messageInput = request.getParameter("messageInput");
+	//Àò¨ú¿é¤J¤º®e
+	request.setCharacterEncoding("Big5");
+	String nameInput = new String(request.getParameter("nameInput").getBytes("ISO-8859-1"),"Big5") ;
+	String messageInput = new String(request.getParameter("messageInput").getBytes("ISO-8859-1"),"Big5");
 	boolean isNull = ((nameInput == null && messageInput == null));
 	JSONObject obj = MessageStorage.main(isNull,nameInput, messageInput);
+	if(!isNull)
+		System.out.println(nameInput+"  "+messageInput);
 %>
 <%=obj%>

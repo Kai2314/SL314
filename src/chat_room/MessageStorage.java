@@ -63,7 +63,6 @@ public class MessageStorage {
 				e.printStackTrace();
 			}
 		}
-		System.out.println(countSize);
 		return obj;
 	}
 }
