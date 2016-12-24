@@ -1,9 +1,17 @@
 package servlet_examples;
 
-import java.io.*;
-import java.sql.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import javax.naming.Context;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.sql.DataSource;
 
 public class DBPhoneLookup extends HttpServlet {
 
@@ -19,6 +27,10 @@ public class DBPhoneLookup extends HttpServlet {
 		PrintWriter out = res.getWriter();
 
 		try {
+			Context ctx = new javax.naming.InitialContext();
+			DataSource ds = (DataSource) ctx.lookup("java:comp/env/jdbc/TestDB2");
+			Connection conn = ds.getConnection();
+
 			// Load (and therefore register) the Oracle Driver
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 
@@ -26,7 +38,9 @@ public class DBPhoneLookup extends HttpServlet {
 			// JDBC-ODBC¾ô±µ¾¹
 
 			// Get a Connection to the database
-			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "scott", "food1234");
+			// con =
+			// DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+			// "scott", "food1234");
 
 			// Display the result set as a list
 			out.println("<HTML><HEAD><TITLE>Phonebook</TITLE></HEAD>");
@@ -43,9 +57,10 @@ public class DBPhoneLookup extends HttpServlet {
 
 			out.println("</UL>");
 			out.println("</BODY></HTML>");
-		} catch (ClassNotFoundException e) {
-			out.println("Couldn't load database driver: " + e.getMessage());
-		} catch (SQLException e) {
+			// } catch (ClassNotFoundException e) {
+			// out.println("Couldn't load database driver: " + e.getMessage());
+		} catch (Exception e) {
+			e.printStackTrace();
 			out.println("SQLException caught: " + e.getMessage());
 		} finally {
 			// Always close the database connection.
